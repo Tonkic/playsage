@@ -1,0 +1,10 @@
+{
+  "cloned_on": "2026-10-31",
+  "shallow": true,
+  "repositories": [
+    {"directory": "OneDragon", "url": "https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git", "commit": "cc3e80f3eacbbe11df5af06590cff095d95553a6"},
+    {"directory": "OK-WW", "url": "https://github.com/ok-oldking/ok-wuthering-waves.git", "commit": "43ef519f303bf928400e465f37acd35982bcbc5f"},
+    {"directory": "OK-EF", "url": "https://github.com/AliceJump/ok-end-field.git", "commit": "d80402a4edf7753d9089680efa68124b3248e764"},
+    {"directory": "SRA", "url": "https://github.com/Shasnow/StarRailAssistant.git", "commit": "08193d7b8e8046d72bfc52d667add455a384dbbc"}
+  ]
+}

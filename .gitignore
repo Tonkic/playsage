@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+data/*
+!data/hsr/
+!data/hsr/**
+runs/
+dist/
+third_party/*/
+tools/child-session/bin/
+tools/child-session/obj/
+

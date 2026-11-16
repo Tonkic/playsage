@@ -1,0 +1,27 @@
+﻿# Manual relic scoring overrides. This file is intentionally kept separate from
+# relic_scoring.fribbels.generated.yaml so Fribbels exports can be regenerated safely.
+
+profiles:
+  1506:SilverWolfLv999:fribbels_default:
+    # Keep Fribbels base weights, then add marginal speed falloff for relic-level
+    # scoring. Full-build panel breakpoints can replace this later.
+    stat_weight_rules:
+      SPD:
+        - after_units: 0
+          weight: 1.0
+        - after_units: 4
+          weight: 0.35
+    stat_weights:
+      SPD: 1.0
+      CRIT Rate_: 1.0
+      CRIT DMG_: 1.0
+
+  1401:TheHerta:fribbels_default:
+    # Default Fribbels has SPD=1.0. This override keeps dual crit highest,
+    # ATK useful, and makes speed a lower-priority roll for enhancement.
+    stat_weights:
+      CRIT Rate_: 1.0
+      CRIT DMG_: 1.0
+      ATK_: 0.75
+      ATK: 0.3
+      SPD: 0.35

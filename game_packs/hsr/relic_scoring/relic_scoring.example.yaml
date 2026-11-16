@@ -1,0 +1,49 @@
+# First-phase relic scoring configuration for Reliquary Archiver imports.
+# Scores use Potential Unit Score internally. Percent ratings can be derived for display.
+
+global_stop_threshold: 6.5
+
+active_profiles:
+  "1001": march_preservation_default
+
+profiles:
+  march_preservation_default:
+    target_sets:
+      cavern: "103"
+      planar: "310"
+
+    enhancement_stop_threshold: 6.5
+    require_target_set: true
+    require_main_stat: true
+    set_score_policy: gate_only
+    main_stat_score_policy: gate_only
+
+    stat_weights:
+      DEF_: 1.0
+      Effect RES_: 0.5
+      SPD: 0.75
+      HP_: 0.25
+      CRIT Rate_: 0.0
+      CRIT DMG_: 0.0
+
+    main_stats:
+      Body:
+        - DEF_
+      Feet:
+        - SPD
+        - DEF_
+      Planar Sphere:
+        - DEF_
+      Link Rope:
+        - Energy Regeneration Rate
+        - DEF_
+
+    cavern_set_effects:
+      - stat: DEF_
+        value: 15
+        coverage: 1.0
+
+    planar_set_effects:
+      - stat: Effect RES_
+        value: 10
+        coverage: 1.0

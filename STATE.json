@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "task": "playsage-hsr-relic-migration",
+  "status": "working",
+  "goal": "PlaySage 崩铁模块可离线读取遗器导出并评分，数据来源可追溯，安全边界和文档明确，测试通过后上传 GitHub。",
+  "criteria": [
+    "迁移评分库和相关 HSR 数据",
+    "只支持离线分析，不接入真实输入",
+    "新增回归测试通过",
+    "README 与架构文档同步",
+    "GitHub 项目创建并推送",
+    "文档同步工作流随 push 触发"
+  ],
+  "scope": [
+    "src/playsage/hsr_relics/",
+    "tests/test_hsr_relics.py",
+    "data/hsr/",
+    "game_packs/hsr/",
+    "README.md",
+    "docs/design.md",
+    ".github/"
+  ],
+  "constraints": [],
+  "current": "PlaySage 崩铁模块可离线读取遗器导出并评分，数据来源可追溯，安全边界和文档明确，测试通过后上传 GitHub。",
+  "next": [],
+  "blocked": [],
+  "followUp": null,
+  "change": "changes/active/playsage-hsr-relic-migration",
+  "layer": "docs"
+}

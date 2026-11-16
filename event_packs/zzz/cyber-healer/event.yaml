@@ -1,0 +1,26 @@
+id: zzz.cyber-healer
+game: zzz
+name: 赛博圣手，出诊！—前四案
+gameplay: grid.collect-all.simple-path
+version: 0.2.0
+status: candidate
+compatibility:
+  resolution:
+  - 1920
+  - 1080
+  game_version: 3.3.0
+execution:
+  preferred_backend: onedragon
+  supported_backends:
+  - onedragon
+entrypoints:
+  onedragon:
+    type: native
+    path: references/onedragon.md
+verification:
+  required_scene: first_four_cases_repaired_and_rewards_confirmed
+  fresh_screenshot: true
+limits:
+  max_retries: 0
+  timeout_seconds: 240
+  max_actions: 48

@@ -1,0 +1,1219 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-26T16:14:03.639149+08:00",
+  "sources": {
+    "fribbels": {
+      "repository": "fribbels/hsr-optimizer",
+      "sha": "a44c5d3ae2f1ed5907055a16c264bdc2392cf131",
+      "commit_time": "2026-10-17T22:24:28Z"
+    },
+    "starrailres": {
+      "repository": "Mar-7th/StarRailRes",
+      "sha": "dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487",
+      "commit_time": "2026-09-29T14:21:41Z"
+    },
+    "nanoka": {
+      "page": "https://hsr.nanoka.cc/relic",
+      "url": "https://static.nanoka.cc/hsr/4.6.54/relicset.json",
+      "sha256": "99a54d77c3b679d0a0c53bd6139dd222607a52847d185bb74126081ac351a93c"
+    }
+  },
+  "downloaded_files": [
+    {
+      "path": "src/lib/conditionals/character/1000/Archer.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Archer.ts",
+      "git_blob_sha": "daebc6da936d9080e03cdf61538dc5558474f7aa",
+      "sha256": "daaa693829c8788201bab604013aaa4f53195b337b09fde536d298dd0864bea5"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Arlan.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Arlan.ts",
+      "git_blob_sha": "b584111e8688741765991dd757e0fc380ae5c3c8",
+      "sha256": "cc009f06d3bb34f0da7dd90e13aad8ab6ea3b16d74e477afeca52a1513596045"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Asta.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Asta.ts",
+      "git_blob_sha": "0c9e19eeef1209412c7d7f41c5ad0cfee9fcb272",
+      "sha256": "fbe7ee70b993b5abd47876d166157ef7b843116baec516750903ba58fe7ae943"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/DanHeng.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/DanHeng.ts",
+      "git_blob_sha": "cfba05bf4f39338642706fe177a1d6490709ca16",
+      "sha256": "525962367a956622bbaf4240c170c45e44092507ff04d78eff8514c796d615ca"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Herta.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Herta.ts",
+      "git_blob_sha": "3f07a0f7bea65c3d001ff9b88567e157963ab740",
+      "sha256": "4abca6efafe2ca8516d94294660d181d7545a131e14265d00c5d024c08f2f9f2"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Himeko.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Himeko.ts",
+      "git_blob_sha": "ddcb47e582dad1fa6e863933a4a5060ebff5550f",
+      "sha256": "dbcca9fcc12297751b7cdce34e584c3e7b17a05774d71eca7f980f8cf3c24f34"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Kafka.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Kafka.ts",
+      "git_blob_sha": "fc42cb887313dd01b480767d1a2d168ca38e8590",
+      "sha256": "040740105497b1706a475ab978703d9b5341c99dc885ee6fb1ede55ea3d61f33"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/KafkaB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/KafkaB1.ts",
+      "git_blob_sha": "38c0dfd9768f37ebfd2b22f3cf97bf352f90f2e2",
+      "sha256": "7310fe9cad43e7a0b7f74e768f6e40e696088b40905f71dda67febb37d1e53fc"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/March7th.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/March7th.ts",
+      "git_blob_sha": "b928c31f9d7606f559550c161ec6198e361a882d",
+      "sha256": "300c00d998954d7301e0698fc1e8f4cf43cc59da11db58fb653ca6fcd76cfd06"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Saber.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Saber.ts",
+      "git_blob_sha": "c16482292ce09dbac06a949c71d932c49015fade",
+      "sha256": "48b4e42d83b4f4b3941dce1965f1efb4fa2c68af121c11d808e1146235edb8d6"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/SilverWolf.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/SilverWolf.ts",
+      "git_blob_sha": "4a2df18fdfd9dcf8656626a1613e80baa80c91d2",
+      "sha256": "3f752b6450d867dbfe8902f9c13145037d1be03a393c253fc6ec4f5bf5176e10"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/SilverWolfB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/SilverWolfB1.ts",
+      "git_blob_sha": "7aeebfcf64865db0cf549d4a2f2620baf3b98004",
+      "sha256": "d6be1cafb8705cdf63b9d4a68900dcf7b19b244b25d696011c48cf751b165cac"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/Welt.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/Welt.ts",
+      "git_blob_sha": "4399c45b3f80692c69356c0522cdbd778dff577f",
+      "sha256": "b351871cde4e3569e7489e84628e2d7e76585ee80c11430d7a1a070d931aaab9"
+    },
+    {
+      "path": "src/lib/conditionals/character/1000/WeltB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1000/WeltB1.ts",
+      "git_blob_sha": "85f4bd91647c49a695f6b2d119d1d57d65204958",
+      "sha256": "83f709870c9819bad1b4c30056038b7dddb987d9b64ae947423626b21a389c04"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Bronya.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Bronya.ts",
+      "git_blob_sha": "fbbc037a056f5251f108d5fd24095d4ad79d9d91",
+      "sha256": "7315e85aaa350c7820be6f219f9e53224420dbd8c656e67792badd566d330a5e"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Clara.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Clara.ts",
+      "git_blob_sha": "ef9b42f06df7669c38c332e02a06251e56b8b47d",
+      "sha256": "c0da1bdd5d044e57e861fc5e2fb190a51ae7a8d705e2f6dc0b631be93536e9fb"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Gepard.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Gepard.ts",
+      "git_blob_sha": "cc734b701f2e67bd0c2cb64b1c75fa62a3a682a4",
+      "sha256": "40f466d45bed910a83e9daeaed61b15afea4b32ecbcf516a3ea934df3d4aeb8c"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Hook.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Hook.ts",
+      "git_blob_sha": "f26c795f1175249960ec961717fee465a8ec54b2",
+      "sha256": "aef880b3ef394bc7f2c1cf04348d4aa6c69edc1087d6ce8a06bffb2e8596567e"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Luka.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Luka.ts",
+      "git_blob_sha": "975bab029761a26e16fbf58a6de94436cb60c9bb",
+      "sha256": "6b076f5b33e6838807812061d4a09d3e8162e7cce9997ab6053dd35625339c87"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Lynx.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Lynx.ts",
+      "git_blob_sha": "8eeaff8220e8546f7f6cd397ff3151dbf63119c0",
+      "sha256": "c464a076b51b6f11a4b7d2d48a18c1fb7c71a32f7b6db7bc0ce1f13bbc444208"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Natasha.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Natasha.ts",
+      "git_blob_sha": "411a8ac5cb8190da551d24bb4a8d67bea52ea358",
+      "sha256": "cb0fc222440047d58ea8d1a5e1a0e51e3546c6d060df2455d242bbe78aa2388d"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Pela.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Pela.ts",
+      "git_blob_sha": "19af69d79f3fb0c0c371543749a8db307951b424",
+      "sha256": "c6a0a55fab77d627d640514b4475ebe74a9a42e533b98dc9b9976c654873cb72"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Sampo.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Sampo.ts",
+      "git_blob_sha": "e0f6714816fc3ae39d696246c66267a611037249",
+      "sha256": "f2ccf1cd40a08b25b45154dbc049cdb973ec7be6728093179428a5d9c794cd69"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Seele.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Seele.ts",
+      "git_blob_sha": "cc43f3ea26d6c4eb3a77a8e4709394ab95288f67",
+      "sha256": "1327db1b6c4b03c45b2e046732fbead402b92013f19bdbebaa27fab4cb622fa1"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/SeeleB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/SeeleB1.ts",
+      "git_blob_sha": "7f24a6897ae7780d8e9e6bf4cee1c965840a85ea",
+      "sha256": "9ce2f9109e75c0671ee314e8800960bfdb73e395cb8730d42edd66c562201c04"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Serval.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Serval.ts",
+      "git_blob_sha": "e304ce2ca68387949175b389bbf9ef13ebab48ae",
+      "sha256": "1a8d878d22e13fea0297fcf03672f9f840d072ca3aae345d719037934f1f3736"
+    },
+    {
+      "path": "src/lib/conditionals/character/1100/Topaz.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1100/Topaz.ts",
+      "git_blob_sha": "435a9f9314b41e8a0b9bf0e68d967778d9e537fa",
+      "sha256": "d29aac0f6d0274a49eebed421276f3b1dd3357e9763f2daeb4d5e8d0aa1b8d20"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Bailu.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Bailu.ts",
+      "git_blob_sha": "3659eab552d1b74bf1ee3c9acaed3b0c518c3ea5",
+      "sha256": "c528982fcff788c3fe6d25f69e6812ee132fffc472e9f567c54f5480767864e6"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Blade.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Blade.ts",
+      "git_blob_sha": "9260ee984caa6c6de3c12c2dd61c8c92d8c40ed2",
+      "sha256": "f1840024ee16c1a71b629350380dee2ff0a4c4a2ce93c2257131e889a645d12b"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/BladeB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/BladeB1.ts",
+      "git_blob_sha": "0b67d9c1391909eb2618c1b76caf737824283d7d",
+      "sha256": "5fb8b142b56d805b87ae7ed0fbf7f4747f05892da61be09f9d64b1ae84347d68"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Feixiao.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Feixiao.ts",
+      "git_blob_sha": "1ebd91705ca817b2450a00c66f45a76b70864712",
+      "sha256": "e4f75d3233c2c61627d9d7b83b3d89fec055e02f00727ff9da9f400ae5139b38"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/FuXuan.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/FuXuan.ts",
+      "git_blob_sha": "fcb94b4286c1c9c00f0ec3db68c31384aa0539bc",
+      "sha256": "c2da3bcba6c0b0391112754f2e0f833ea4974d2fcb3e6b518256a0e3b0fdd725"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Fugue.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Fugue.ts",
+      "git_blob_sha": "bbe29f0d1f6b67ebb883e8055e2dcbe212192e05",
+      "sha256": "11aec1d695885b09e9b977e69b95ce547bb24f0572a5cc39874024e2b9dc6967"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Guinaifen.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Guinaifen.ts",
+      "git_blob_sha": "5c63eae5f3d652756dda4ac8333d01388b862c5b",
+      "sha256": "991adbebdeaafa284116de3131c900982f31f053653f641ed896c8d56d825778"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Hanya.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Hanya.ts",
+      "git_blob_sha": "8229708b01085b463d511109bc8425b153ab87f7",
+      "sha256": "879a40501c8abbcc40a83ed03c3c6de6074dac6f8c7954b5262ee43fd950dfcb"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Huohuo.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Huohuo.ts",
+      "git_blob_sha": "e9bea732d9762ec069a31628f8c94be7c6e8dfaf",
+      "sha256": "9441666178c454765146d94e11ddc04da9e0f54824fcffab1ae8d32ac822db09"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/HuohuoB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/HuohuoB1.ts",
+      "git_blob_sha": "eca815a84dd95342f9104fcaa6674f3799c3c381",
+      "sha256": "8d3b0237fa4ee3f045a81d5eba1745b29abe928104513ba3af9575b937ce4c12"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/ImbibitorLunae.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/ImbibitorLunae.ts",
+      "git_blob_sha": "02b93c1f3cb4882433b8cfb6d8877026a1b1619e",
+      "sha256": "555c93d9429f8a51faacd1f2b5da316e9fb2b79c99e00779c05151c0d74773e8"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Jiaoqiu.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Jiaoqiu.ts",
+      "git_blob_sha": "9742741610552e03d960d21ca3a57261c74f1356",
+      "sha256": "2c92c921da0a0a9bef0b720b1489898dd235d12e64638318d8c0e311896addd9"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/JingYuan.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/JingYuan.ts",
+      "git_blob_sha": "59632bff99b2a8d0cfbeb674dafa75b2ef45a7ff",
+      "sha256": "779c63a10616b690ca085ac21ff2f1a4923da91739137ecb600434ff2af17699"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Jingliu.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Jingliu.ts",
+      "git_blob_sha": "071e6496d465e436599e8afb1ea5ccc1b3c4220d",
+      "sha256": "0cd092826e1732386f0cf00f8c4b9edf1bafb3810f5bcc6878eaad73aa268fd6"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/JingliuB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/JingliuB1.ts",
+      "git_blob_sha": "7e465a6a0e748c01edbc7f11240894a2cafee905",
+      "sha256": "c76eb50f13f1730cca89bf2b3617c46c28a43a1fd8e5352677a28e941c5a6818"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Lingsha.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Lingsha.ts",
+      "git_blob_sha": "7e2a5e2bd3f0ad6dfd092d7a8fa290b8084f134d",
+      "sha256": "189167fa5a904171d20940a51738d685f7fa28d8f768121754521f8cbd5160df"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Luocha.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Luocha.ts",
+      "git_blob_sha": "458a0467413027d57844a052df029700525f854b",
+      "sha256": "7bc72fe0af67545180b7074b2bb272a10a35648204a3f8107095ce1a777d6010"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/March7thImaginary.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/March7thImaginary.ts",
+      "git_blob_sha": "f41e85f5c1ae49d7f3dc5d22f49c95230adad2df",
+      "sha256": "465746c0e1f29fc54cdf7aa6197bf592ba90b331fd68e0205c88ed3546e4ae50"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Moze.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Moze.ts",
+      "git_blob_sha": "b3306000e33ef7d3de4b048301b4f4090632f4a2",
+      "sha256": "c868002d5d7f9358949384857e2dd9abe7e4820685498dac1162f5efb9a6114d"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Qingque.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Qingque.ts",
+      "git_blob_sha": "bc885df687231d591f94bcbc80d49b88261d4ed0",
+      "sha256": "50d08eaf5100063931fccfbe8a1f3513b23233ee2720eb009621b2aaba897ae5"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Sushang.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Sushang.ts",
+      "git_blob_sha": "3f678db583a232d1fd54710f1e04be0c77487094",
+      "sha256": "4879ebb8f17c58b493a0619ded3e61fa98adf71b5375a04693b30e98657a774e"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Tingyun.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Tingyun.ts",
+      "git_blob_sha": "25b3f8f0ce69061f166c82cfea80d4414a8e56c8",
+      "sha256": "39c95d50cf8ddc905103637fca49a95ea6d97de0a80cd821e078e497507a3338"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Xueyi.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Xueyi.ts",
+      "git_blob_sha": "022cdf9f5746efbe96ba08529185d7d9c75b74a5",
+      "sha256": "63bbd34e063bad84ef8f03273023ea8345f1538774184cc86109b8f2c562c8be"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Yanqing.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Yanqing.ts",
+      "git_blob_sha": "28b7621e399cb164f97e0cf124fbb706c4bcf7c1",
+      "sha256": "9e2bad63140881ebd4440400c87be5f278bbbeba0a0c1121d0cc81b3caa0ab37"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Yukong.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Yukong.ts",
+      "git_blob_sha": "53c90f0d1f3217153d056b0e0cd234720cde9c2b",
+      "sha256": "1aa12034362044d7f188e49b7f077bf2c0695d772c1f0b63bef3547ac8b393a4"
+    },
+    {
+      "path": "src/lib/conditionals/character/1200/Yunli.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1200/Yunli.ts",
+      "git_blob_sha": "5593be3c7ec67a40c8d8bf02cb86fc727d0927ec",
+      "sha256": "fab2d2574dc83463229804a5631cfbabe7f5da45372c0b15b0992629bd27b908"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Acheron.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Acheron.ts",
+      "git_blob_sha": "49f2c195be0bdc70dea5d972930df903838e093a",
+      "sha256": "a15cde376f404e61c8d03384c9b7a532a8daec25777f4544f6e21cb987e04cd4"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Argenti.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Argenti.ts",
+      "git_blob_sha": "0a2c4aa8da75253531daef16cb559475949a7455",
+      "sha256": "beab0f8d8f89f035d5f5689a0b716010cf3deac7e41c7f0cb24fec20f7635dc2"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Aventurine.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Aventurine.ts",
+      "git_blob_sha": "67de31400793c3fa8669647bbfabbca3150ebada",
+      "sha256": "d7d2a9ea4a242f3b04ca922a0ba0d5bf3dd938527418eb56d8824b60ef00c890"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/BlackSwan.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/BlackSwan.ts",
+      "git_blob_sha": "cae04c79ec67e3eeb33bf2a210f602e44551b917",
+      "sha256": "c1649aa8536ce40c195b14edf676b43ea9400a1812595a07561abe00e678e638"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/BlackSwanB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/BlackSwanB1.ts",
+      "git_blob_sha": "22411e404150ff837f56752321a17861c4b53fac",
+      "sha256": "48a39a240b8abd98760ade4a0108afd1cc7618be611bac600cdaa38ffd4d85a9"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Boothill.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Boothill.ts",
+      "git_blob_sha": "82bb4d9937e79a94febee3fca6182940270c5213",
+      "sha256": "5061419c69374d32efac915a74417ad65e8fb22b60d37814fdadc10fc202d2e0"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/DrRatio.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/DrRatio.ts",
+      "git_blob_sha": "d33508d7a6c3f9184d63c5274853513bedc876a2",
+      "sha256": "6112d8c7ed77b84f03dbd92a1b55779ab679181bf53e8503750399e566689a2a"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Firefly.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Firefly.ts",
+      "git_blob_sha": "c648eb789ae4296444e023c5ae61d7d27823572e",
+      "sha256": "e5339057f8403e66be460944979fe977c817ea984329358c24bc95a1df406a46"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/FireflyB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/FireflyB1.ts",
+      "git_blob_sha": "ff4817f4b578fc4cf4eb2778cc046dc152bdbce5",
+      "sha256": "9fc9915be438877eee387716cdc21f532dfc7257729375fa282c32b2e074c358"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Gallagher.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Gallagher.ts",
+      "git_blob_sha": "6d710b9b2c11308e1c2932bdf53c854c89f07751",
+      "sha256": "39f9bb9c3fabf621ed4465ffffea468a5a4a06b9a9083081f293a8afa5494373"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Jade.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Jade.ts",
+      "git_blob_sha": "d26868c0266e7bf0802d1a42cdd2e23fc1baa243",
+      "sha256": "94781b85b4951af99a1d57892be61a8db47d0e631cf3480ef5d7f47c027cde95"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Misha.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Misha.ts",
+      "git_blob_sha": "df8588a71992b3daa0d6fd456cb3da60cc6ce593",
+      "sha256": "7d001c3d00c5886facb3b5e4f65e878c0dbbcf1dffb61b601db093f2bff7760e"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Rappa.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Rappa.ts",
+      "git_blob_sha": "cf4ad9dd1a868d6c4d1d6b3d97c39a912a4b99a2",
+      "sha256": "eb8f7b77f90ffd7edb94e83e7394b6ddee9ee550f5b02c139d2787f580ff5992"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Robin.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Robin.ts",
+      "git_blob_sha": "77a386fcea19e562f56352ad03c32867d871ab33",
+      "sha256": "9bafcbd3e3d92c37a48608c96e8ea7a3dcb5a5f292b48a17b10b2f231b0ea214"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/RuanMei.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/RuanMei.ts",
+      "git_blob_sha": "b1a7e7f2f0a172442afec58a53500da203d2e204",
+      "sha256": "9165a8de2c6bbed591436899aeee86fa5df92d763cd223a241181d4ec8c08574"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Sparkle.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Sparkle.ts",
+      "git_blob_sha": "9558519aded6fe029ca701033dad94c5d6432baf",
+      "sha256": "c8a4df9f914d3fe12e6332a1aba0bac83fb8071d9bb5ecc8e8da8fe0294214b1"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/SparkleB1.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/SparkleB1.ts",
+      "git_blob_sha": "50a62bc2557681ebebce9f1bb654b2101b5e09a8",
+      "sha256": "3dc4493b7164b312c7f0aaf93efd79af9b8f419e023b5732bca884bc0938eb3c"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/Sunday.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/Sunday.ts",
+      "git_blob_sha": "477864335286c100cb1640c0a1b3e077fac82c4f",
+      "sha256": "d031622e279c815b9056473dda8e7b706d606ba7887dd9326265613a73ca93d6"
+    },
+    {
+      "path": "src/lib/conditionals/character/1300/TheDahlia.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1300/TheDahlia.ts",
+      "git_blob_sha": "effce61d2ed42d59f0487a9bca4ee7bfee66fd91",
+      "sha256": "681d51d8e853ef17e450afa271b60319da4105ceb6e3c9544c84cd1a92105c4c"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Aglaea.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Aglaea.ts",
+      "git_blob_sha": "e914773177cd6df6411de5a074f8872c612d2dcc",
+      "sha256": "b6b701becba967c6e02f6bcb58b79db047c1d9579c48f9558884f85bd8848c29"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Anaxa.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Anaxa.ts",
+      "git_blob_sha": "7b096a413b300934ef87ab2846cb9436ce1295d4",
+      "sha256": "e7873fdddf74a3f8207b0f2c88ed48bbcbdf70134235053780068c79aba37121"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Castorice.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Castorice.ts",
+      "git_blob_sha": "292b7378ec4bba2211286f9da5e8f15b30938846",
+      "sha256": "f7b7b14cdd80e78a0d933cd16f21e213f5edd2301e33035fd66a41829a4297f8"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Cerydra.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Cerydra.ts",
+      "git_blob_sha": "650b9cb0376b06b1449ed358ebf709d91c425516",
+      "sha256": "6fcc2b7467a255fbf96d9288efd16e0a15e4bd6a0da9418805de925b3f5ce007"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Cipher.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Cipher.ts",
+      "git_blob_sha": "304566d2babe9972fe0599230c7cf3be5286cf95",
+      "sha256": "2bfda03aca89249f1079958fa53ce5e828c2ee1f164e7948c4889dbe99409102"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Cyrene.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Cyrene.ts",
+      "git_blob_sha": "0fad88aa5bb6bb99ff4f83fa7ecd1571ada5c9a7",
+      "sha256": "38ca576bc8f1c65b1467139d00b55f2000e41095da6fb2ab4788de287f085794"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Evernight.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Evernight.ts",
+      "git_blob_sha": "a5f8fe58289dd475d6e0ea3d5971440c504b9aca",
+      "sha256": "831e5d38fa4dd5c54df7f44731066c81018e937dbe38e90c846d10660c3e5af1"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Hyacine.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Hyacine.ts",
+      "git_blob_sha": "f31d5606927d516866b7c68b3b8d7317168de964",
+      "sha256": "3aece2b4c1b460a096dfc5c07de17fecdf12d869ee545c1d436a3f6839f04d68"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Hysilens.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Hysilens.ts",
+      "git_blob_sha": "0421fb02c382fd8c45b278c2df469d708a151571",
+      "sha256": "189deec1c9a40cebc44ea2cdbb915c5109fc4193ff8cc42faaf9877e6f0542f9"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Mydei.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Mydei.ts",
+      "git_blob_sha": "934bd8b0e829908f43cd4d68283ff95303f70720",
+      "sha256": "2ef22102db75610c134208280fa545cff78ec738a36405ef4b169fa47c2be50f"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/PermansorTerrae.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/PermansorTerrae.ts",
+      "git_blob_sha": "ecae791daad71eeb8de5384881349c8c0f1ecbf0",
+      "sha256": "09d1d07d7a05e8e57f5bd9fc32fd39383ed8626c022a3336444e4266a3c4d6a0"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Phainon.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Phainon.ts",
+      "git_blob_sha": "4830487cde6175018ab7a77fb982e3e6ed2ecb77",
+      "sha256": "c8216ea2436764906eaa6394d84a1e14f1420782799b0f201378f5ce6e562302"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/TheHerta.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/TheHerta.ts",
+      "git_blob_sha": "95106dca9834704f766af70766772725c353202b",
+      "sha256": "67242081092b86085b5413df40c504f38e294a14dbf9076f9c39f712200a80a4"
+    },
+    {
+      "path": "src/lib/conditionals/character/1400/Tribbie.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1400/Tribbie.ts",
+      "git_blob_sha": "a4f303f7150b477af7990252e19c506ce265ae0d",
+      "sha256": "c5c03293b19d7b1063e83d761246be0080da0ea1bd246c55c1fdfdcdc931ced8"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/AeonAha.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/AeonAha.ts",
+      "git_blob_sha": "46bd9aa1a525d385f82df8d34aaa13d63052ef61",
+      "sha256": "fca59f23429e9006114aa06fc0f4fc4ccfd2685d69b56e681fa826d49c5579a9"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Ashveil.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Ashveil.ts",
+      "git_blob_sha": "9cef3aa59b084c210ca2562ece0c7b9b323e2ed4",
+      "sha256": "5a181094d25656c6e1ad92c020edf9c1bc31d0e1e3f76f982f293031bea25456"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/AventurineWaveflair.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/AventurineWaveflair.ts",
+      "git_blob_sha": "8c1a4ddb725cfeed3c085a3678d572be5ea176d6",
+      "sha256": "875edd2d3d2d90e3cd603335e6d688087f4258e35b13b35acdec6be2ffb1534b"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Evanescia.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Evanescia.ts",
+      "git_blob_sha": "d6a89675e7f9a3056302c1e0e3e894cda0bb856a",
+      "sha256": "b8a6d9b38e3062972261dc8ca2bae4863d87d061de640c50e68cf513975c5565"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Gilgamesh.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Gilgamesh.ts",
+      "git_blob_sha": "69120f63b7344c48d886550a868073758161f7b3",
+      "sha256": "eed0620e87d5c899afea4ec5462022cb2ad03eb93edf97e8f2a922e44a9ccbe0"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/HimekoNova.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/HimekoNova.ts",
+      "git_blob_sha": "7c32ddeb84aee33ce5d0b44cf49cd4a5b779e4f2",
+      "sha256": "09cac44dd9958851ceff928520e0a8952584068792e5afbb6d851f99c91a729e"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/MortenaxBlade.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/MortenaxBlade.ts",
+      "git_blob_sha": "a9241064c46a75ba14507e374a7518070b8a3eaa",
+      "sha256": "0dc88885b342fbb6798f3521c3796a76a81aef99483a68b106ff442e83ed27fa"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Pearl.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Pearl.ts",
+      "git_blob_sha": "c33e0d7cc965908afcd4b624dfe60849c0611e10",
+      "sha256": "9821577e0811999a267c937bb2705de548eb6d919ef0611da6053e348dd3f499"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/RinTohsaka.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/RinTohsaka.ts",
+      "git_blob_sha": "5e28d271dab2c0c4a5b331edc5a9d267eccf0a93",
+      "sha256": "512d98a7e7da367ff16eb5deffddaea9bc96f0ba91b54b016229ae53b02898d4"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/RobinSummeretto.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/RobinSummeretto.ts",
+      "git_blob_sha": "bf14735bfdebc36bbfdad6edecdb9d1aebdb556e",
+      "sha256": "2d6b6407c9c54c7f0c75ce8854722a559b606da8e37c3328af7dc509116fd80b"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/SilverWolfLv999.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/SilverWolfLv999.ts",
+      "git_blob_sha": "c8aa320427983d0d9bda2fc65fa5d33374815cc4",
+      "sha256": "f0b5e8c9c958bddaac21382ebc754ce908f062d6b0cc2fd8d399f504ea0b6617"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Sparxie.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Sparxie.ts",
+      "git_blob_sha": "bd370b2009d42896d9040bb9d9a3f9325d250058",
+      "sha256": "2db1a82470748be69e282f8670ba9d6ce042d6f5ee7afe0befd8f51c0cddfc80"
+    },
+    {
+      "path": "src/lib/conditionals/character/1500/Yaoguang.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/1500/Yaoguang.ts",
+      "git_blob_sha": "b092725f22f7fdfbc140c446c38a365b75b7ada6",
+      "sha256": "4d8560fbf6024da5c93d31c0dad27824345d2997f10825cbc34a5fb2a2efa4c0"
+    },
+    {
+      "path": "src/lib/conditionals/character/8000/TrailblazerDestruction.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/8000/TrailblazerDestruction.ts",
+      "git_blob_sha": "b839dff450600edca045902c5df5cba132536663",
+      "sha256": "3955b7681f215fdd55ab828e3650eac20545fce8aa3f34c909bb58915f45a63e"
+    },
+    {
+      "path": "src/lib/conditionals/character/8000/TrailblazerElation.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/8000/TrailblazerElation.ts",
+      "git_blob_sha": "26505d5961c3b55831a74501e2dba293743f0c11",
+      "sha256": "54c3deffba23637dbdf98bd01ed8266a8275746a2ccb7facedfc7905bc54e965"
+    },
+    {
+      "path": "src/lib/conditionals/character/8000/TrailblazerHarmony.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/8000/TrailblazerHarmony.ts",
+      "git_blob_sha": "75a56a0def959a33d1257d670ffb7c37ed4ed5e4",
+      "sha256": "0c121205bc671e11ce11bccb73d177d8ef4092fa610cdc95d13c77b50d7356dd"
+    },
+    {
+      "path": "src/lib/conditionals/character/8000/TrailblazerPreservation.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/8000/TrailblazerPreservation.ts",
+      "git_blob_sha": "8b5136c4002ffaf15e78b0b0cf9fa48ba329d062",
+      "sha256": "ed85d3de1bb91c66d825c72c00166356c0259378e6d976945285df3240090c86"
+    },
+    {
+      "path": "src/lib/conditionals/character/8000/TrailblazerRemembrance.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/conditionals/character/8000/TrailblazerRemembrance.ts",
+      "git_blob_sha": "2a15d1deeb622971b306399f643df2ce890edca9",
+      "sha256": "ebbfd6993206c51227fb3c0f4d4135eacd312aed2a4b7c2fe8c030093b202535"
+    },
+    {
+      "path": "src/lib/sets/ornaments/AmphoreusTheEternalLand.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/AmphoreusTheEternalLand.ts",
+      "git_blob_sha": "1e7e0011605a313d72c867b35fbc368193585e01",
+      "sha256": "c42fa07859ee36a140a2ab0c0fadcd2c3123fe6dbebd902ab38e247cfef0c037"
+    },
+    {
+      "path": "src/lib/sets/ornaments/ArcadiaOfWovenDreams.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/ArcadiaOfWovenDreams.ts",
+      "git_blob_sha": "e4d62a5e812675e75a1cf19a98bf06617ede7795",
+      "sha256": "4a01a1d8df8b7cc08b14dd7cdd168b0b6c126dee9d904d9d032cfe772e3b804b"
+    },
+    {
+      "path": "src/lib/sets/ornaments/BelobogOfTheArchitects.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/BelobogOfTheArchitects.ts",
+      "git_blob_sha": "6376c32d876936eb2faa8be2dbe410cff5e10605",
+      "sha256": "b6af247756449369802efe636ae861b091f424ff358ed81bb64c0bc7a66ba318"
+    },
+    {
+      "path": "src/lib/sets/ornaments/BoneCollectionsSereneDemesne.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/BoneCollectionsSereneDemesne.ts",
+      "git_blob_sha": "fd17e8c6ddb418b4df04b1b7876ddeed83d69c59",
+      "sha256": "719408c5a5337013252c649735e92e444b705c47dc09891bbc5e8e78fb13a2e6"
+    },
+    {
+      "path": "src/lib/sets/ornaments/BrokenKeel.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/BrokenKeel.ts",
+      "git_blob_sha": "5418f64c6c65264ff8560349556a1cd8b60fdb0c",
+      "sha256": "fcda07b2897e1532b1cefd746f62e2adfa04e781ef2a66d74d22e19eda3a525b"
+    },
+    {
+      "path": "src/lib/sets/ornaments/CelestialDifferentiator.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/CelestialDifferentiator.ts",
+      "git_blob_sha": "a9f643f0086facee5e81ef56c4fd24051cfd2b56",
+      "sha256": "bcbd0be8305852eea1704f405181c9d9550ebd039862ba8cdf1d8ae7c6c10804"
+    },
+    {
+      "path": "src/lib/sets/ornaments/CityOfConvergingStars.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/CityOfConvergingStars.ts",
+      "git_blob_sha": "f6b2c73750821f9e9847bb00e2d14b39c7b8c3d0",
+      "sha256": "15f6f6299988a67509bcb8577650eaf32d4d36fb2bf7796f425ac31310a6941e"
+    },
+    {
+      "path": "src/lib/sets/ornaments/CosmicLifeSciencesInstitute.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/CosmicLifeSciencesInstitute.ts",
+      "git_blob_sha": "7dd1314c9f3d7ca4efcbb272a6df80c369aa65b4",
+      "sha256": "6e6c53ce8f8a701853cd7adc37b68fb26afed492fb0ef775401af185bc7cb790"
+    },
+    {
+      "path": "src/lib/sets/ornaments/DuranDynastyOfRunningWolves.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/DuranDynastyOfRunningWolves.ts",
+      "git_blob_sha": "7d14a4e773b75a098567f503cef1b071f59f9db9",
+      "sha256": "4b27ffe6b5725fa575c33aac7f9be076a5dc39ce49a26844a3be98a99f98b9bb"
+    },
+    {
+      "path": "src/lib/sets/ornaments/FallenStarAnchorage.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/FallenStarAnchorage.ts",
+      "git_blob_sha": "b2027e2483d46d4701598538f8d79c11b3e7bb00",
+      "sha256": "6f5a20f4b57dc8b586967276c5348924eca3848fedc2f89aa73002af0d4121df"
+    },
+    {
+      "path": "src/lib/sets/ornaments/FirmamentFrontlineGlamoth.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/FirmamentFrontlineGlamoth.ts",
+      "git_blob_sha": "b4a3842e28d34f578418fb4e87c5f9bb7813dd7e",
+      "sha256": "4b06b2c194e54fa2ea4abbd1ac35477089d8de0a2cd80b6323519a9389edb3c2"
+    },
+    {
+      "path": "src/lib/sets/ornaments/FleetOfTheAgeless.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/FleetOfTheAgeless.ts",
+      "git_blob_sha": "07e17d9071e219984859203bb1ed3ce787a48ecb",
+      "sha256": "681ed59750fc909d6829a575e68a9ac63b98e3fcad4030aaf606eca952e607bd"
+    },
+    {
+      "path": "src/lib/sets/ornaments/ForgeOfTheKalpagniLantern.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/ForgeOfTheKalpagniLantern.ts",
+      "git_blob_sha": "c923ef6d96f372edfdd6e03ec8f8e2aef85f603c",
+      "sha256": "43262a3335c9eef6141660c67b63b889c2491c27d15aa6b940d38fe7911e47ff"
+    },
+    {
+      "path": "src/lib/sets/ornaments/GiantTreeOfRaptBrooding.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/GiantTreeOfRaptBrooding.ts",
+      "git_blob_sha": "4b613b73a01afce505d500ea7afa27f849bd6ba7",
+      "sha256": "3b87df245c1ee88ff6a65ecfc88e90889d71f1b7d1e883a1ef30f336ba4538b1"
+    },
+    {
+      "path": "src/lib/sets/ornaments/GodsMomentOfJoy.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/GodsMomentOfJoy.ts",
+      "git_blob_sha": "44400098e4bc4737199207845b950eec94c88e11",
+      "sha256": "4b9440cf3d92f461cc8d01fbbae0efe9678b532f7f6ca7a63044ff8f7f3e3233"
+    },
+    {
+      "path": "src/lib/sets/ornaments/InertSalsotto.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/InertSalsotto.ts",
+      "git_blob_sha": "409b771e6409e470e5d3950633129fa1b771b719",
+      "sha256": "fc02adc2a7c9da8d9e332d990d4319403a60473b8d7783bf820d9e769673371b"
+    },
+    {
+      "path": "src/lib/sets/ornaments/IzumoGenseiAndTakamaDivineRealm.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/IzumoGenseiAndTakamaDivineRealm.ts",
+      "git_blob_sha": "09cc61895ef9e30089b1cd809827734840fd72a6",
+      "sha256": "cb3428e1e50d4e6d49d4956de688e7791f1445a89fc143831231e2ff22e61c0f"
+    },
+    {
+      "path": "src/lib/sets/ornaments/LushakaTheSunkenSeas.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/LushakaTheSunkenSeas.ts",
+      "git_blob_sha": "35f53de1e5201697127e5db07542ecc2ee50b561",
+      "sha256": "7852029137bea11531300da18c346446ca77efdf7c1ca1844a8a979cc5e26f9e"
+    },
+    {
+      "path": "src/lib/sets/ornaments/PanCosmicCommercialEnterprise.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/PanCosmicCommercialEnterprise.ts",
+      "git_blob_sha": "1ea6ee73f0e5cc835e3cede529b3833b51a9af24",
+      "sha256": "04fd6489803f0378dd49d727bdde66137614898d8adec0eb16d289c26c573ace"
+    },
+    {
+      "path": "src/lib/sets/ornaments/PenaconyLandOfTheDreams.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/PenaconyLandOfTheDreams.ts",
+      "git_blob_sha": "d5138b34e59fe37153dbafa4d4fd0e7706d0996b",
+      "sha256": "c978a2e6fe1e14a641a9d1b3fa8148fc3f75b7f0c2108dd92310f479f670b01a"
+    },
+    {
+      "path": "src/lib/sets/ornaments/PunklordeStageZero.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/PunklordeStageZero.ts",
+      "git_blob_sha": "d49ed1825166590a3a9229452d772c18a7735d5f",
+      "sha256": "ea3b73c09af493b48bbb9dee718c90837b1541f99a9e0ba5ceca134bb26360bf"
+    },
+    {
+      "path": "src/lib/sets/ornaments/RevelryByTheSea.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/RevelryByTheSea.ts",
+      "git_blob_sha": "ee0534dd703b4ca2933827a9669280bbf1926427",
+      "sha256": "a3b36527cd4b29687c852c3dae94e2343608727c5a8d5f6e916c914bee373368"
+    },
+    {
+      "path": "src/lib/sets/ornaments/RutilantArena.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/RutilantArena.ts",
+      "git_blob_sha": "326016806c31058f62f1966a0a4354d426493dfa",
+      "sha256": "26de73b15f8970c829f67cda4a47e393f71f8b282d2ff59de8d3845d2617cb61"
+    },
+    {
+      "path": "src/lib/sets/ornaments/SigoniaTheUnclaimedDesolation.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/SigoniaTheUnclaimedDesolation.ts",
+      "git_blob_sha": "79d918d1e6f55a343ba91b0afe4f0b791da35b72",
+      "sha256": "12b7b6b79b897862cb00ddcd09226af71b4965d7984ab0c3c2d33bd2a8b3be11"
+    },
+    {
+      "path": "src/lib/sets/ornaments/SpaceSealingStation.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/SpaceSealingStation.ts",
+      "git_blob_sha": "701515dbc7ffe12762964e58eef203397d69a03d",
+      "sha256": "2359735b68c1909ad1bab456fb1dbe49e93744ced6fe35929c7b9020b38e2f0f"
+    },
+    {
+      "path": "src/lib/sets/ornaments/SprightlyVonwacq.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/SprightlyVonwacq.ts",
+      "git_blob_sha": "d457a6b25c58c553c470875f31b31d62508e9d14",
+      "sha256": "9a5e86148132700a0a5e8deb3e6e9eee16e590d68beffb4ea322cfca95886672"
+    },
+    {
+      "path": "src/lib/sets/ornaments/SubspaceASCCenter.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/SubspaceASCCenter.ts",
+      "git_blob_sha": "4e4edc5b9cf8057796b981f13ff5c01e09f34966",
+      "sha256": "1ca105717060bbe8462c2e18466f36f5e3db2737465d6d13b0040d95ddb5f382"
+    },
+    {
+      "path": "src/lib/sets/ornaments/TaliaKingdomOfBanditry.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/TaliaKingdomOfBanditry.ts",
+      "git_blob_sha": "1c1fc3257a65bcd0cd35cf823b858f52ea9ea621",
+      "sha256": "796cee1f2f9423b672530ba0a2380ff586271291d55d6fc5b8e879439d7c0905"
+    },
+    {
+      "path": "src/lib/sets/ornaments/TengokuLivestream.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/TengokuLivestream.ts",
+      "git_blob_sha": "e69ed00de637f25eef0122015ad532b3b173b412",
+      "sha256": "3960197b69a13d7864cc7eb53fe6dc5b77efc7f1a2da13d0bd9e14c6b084dc92"
+    },
+    {
+      "path": "src/lib/sets/ornaments/TheWondrousBananAmusementPark.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/ornaments/TheWondrousBananAmusementPark.ts",
+      "git_blob_sha": "1efe1a8d2e2d3bef9f6c3cb02786fdd29bf1778e",
+      "sha256": "ea72c121c4eecfb7a131c3184b600c45c6bf970a86283848b40de54c0678e0cd"
+    },
+    {
+      "path": "src/lib/sets/relics/AsNavigatorIseeSeesIt.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/AsNavigatorIseeSeesIt.ts",
+      "git_blob_sha": "f44dfc6deb0e6627cdd29d8483de549ad14f1da2",
+      "sha256": "98a037b6218d5f34c5be12af52bb1018d4c238ef526bacaa6bdadd6852db9c68"
+    },
+    {
+      "path": "src/lib/sets/relics/BandOfSizzlingThunder.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/BandOfSizzlingThunder.ts",
+      "git_blob_sha": "864a33475aac8eff204abd824dc5332c7671c8e5",
+      "sha256": "5ac2badffad91efea6947e47eefb877ab066da382853dea5bddcd49038b76d05"
+    },
+    {
+      "path": "src/lib/sets/relics/ChampionOfStreetwiseBoxing.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/ChampionOfStreetwiseBoxing.ts",
+      "git_blob_sha": "7fecb52162fb44c56e98ab3cd071b81e9eee27c0",
+      "sha256": "fe266f73f2a722e49dcd99f328175c85836210bf94b317239a1c46b5c32a6749"
+    },
+    {
+      "path": "src/lib/sets/relics/DivineQueryingMasterSmith.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/DivineQueryingMasterSmith.ts",
+      "git_blob_sha": "94d53ecae9f321b06575fcd362791cde7c241f8d",
+      "sha256": "1df4d96cf671f72c03d642a1041db81ad71beb5316990835704be2839abf2181"
+    },
+    {
+      "path": "src/lib/sets/relics/DivinerOfDistantReach.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/DivinerOfDistantReach.ts",
+      "git_blob_sha": "db66dfde38ad7aaaeb2d2dbd264ba87abf1ca6c0",
+      "sha256": "f22c19c41923e34e85e116cdba48406c428785d2f716c7d1cc2962fee520e707"
+    },
+    {
+      "path": "src/lib/sets/relics/DreamlitActor.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/DreamlitActor.ts",
+      "git_blob_sha": "2126f9797244b0077867049656df0b0eee7b0a3b",
+      "sha256": "b60dec3b4f04a374e4ddaaf9554e124b46c8253fe3fc32eaa8c503a5cbf462f9"
+    },
+    {
+      "path": "src/lib/sets/relics/EagleOfTwilightLine.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/EagleOfTwilightLine.ts",
+      "git_blob_sha": "19ac4d8a6fe9ffad4b1510257a38eb4db7ef880c",
+      "sha256": "aa129c756966b4581f414b47683dedda362497f7f7ab2c98f1cec005b2aa6b26"
+    },
+    {
+      "path": "src/lib/sets/relics/EverGloriousMagicalGirl.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/EverGloriousMagicalGirl.ts",
+      "git_blob_sha": "ff49dbe700937233baa2f7071e6d711534e332ae",
+      "sha256": "14ae7afddb899475c982e1bd4d921f87a72b2545e5db1f82a2f4259269615e6d"
+    },
+    {
+      "path": "src/lib/sets/relics/FiresmithOfLavaForging.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/FiresmithOfLavaForging.ts",
+      "git_blob_sha": "f4aa4605f80c4f78b8489c6d82f406855de19f44",
+      "sha256": "628d627e3a0de737705fe71e4f1c79bfb4f09415d9fb4e6ff5676ef19739adb9"
+    },
+    {
+      "path": "src/lib/sets/relics/GeniusOfBrilliantStars.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/GeniusOfBrilliantStars.ts",
+      "git_blob_sha": "7a31a80de55edd34d6e5ad3aba0c4727f00deea8",
+      "sha256": "de4ea750e37de2cb1a1867bd4b3273cbc64fa4260c35d83959d2d6bf79541a22"
+    },
+    {
+      "path": "src/lib/sets/relics/GuardOfWutheringSnow.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/GuardOfWutheringSnow.ts",
+      "git_blob_sha": "f17559cca8884d94986a7e835af08ff9c39ffce6",
+      "sha256": "f0c5fd8e70a82d05004abe3b67873602b7a5056a5dc81d5677197d73408a1002"
+    },
+    {
+      "path": "src/lib/sets/relics/HeroOfTriumphantSong.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/HeroOfTriumphantSong.ts",
+      "git_blob_sha": "9f04f598fd851e1494fb715fc8ae6900b6c1aa3b",
+      "sha256": "7dd13018b3624224fdc3c59fdcb2705e14d7e9147c13b2dd4ca4643e2dcc6348"
+    },
+    {
+      "path": "src/lib/sets/relics/HunterOfGlacialForest.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/HunterOfGlacialForest.ts",
+      "git_blob_sha": "381c3d2135e25e37a792c2bce5ab018c9d575718",
+      "sha256": "fda03dd0cca24addcbbd8e5fe17ac619b9d9091d50e8f6b2e5fdbd35fea91918"
+    },
+    {
+      "path": "src/lib/sets/relics/IronCavalryAgainstTheScourge.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/IronCavalryAgainstTheScourge.ts",
+      "git_blob_sha": "3ba7ffcbafa11049d710c6f6cd13466904f808aa",
+      "sha256": "1a2a33bdf4cad6141f604716a7e16ff70667132b75ec28e74e12e22fca12aa92"
+    },
+    {
+      "path": "src/lib/sets/relics/KnightOfPurityPalace.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/KnightOfPurityPalace.ts",
+      "git_blob_sha": "d8c566a5dc547d717d6d690ad096d79fb8a3aa50",
+      "sha256": "9c3a22eccce48efccccd6f777bd1e84ae9a7539e475c5c348a796d929e251380"
+    },
+    {
+      "path": "src/lib/sets/relics/LongevousDisciple.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/LongevousDisciple.ts",
+      "git_blob_sha": "df7f370e5f699b1be98d8b01506040cff266e979",
+      "sha256": "da2f7faac67e8c88651c60ebac0becb726609c4577c1c5dc53c032478442666e"
+    },
+    {
+      "path": "src/lib/sets/relics/MessengerTraversingHackerspace.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/MessengerTraversingHackerspace.ts",
+      "git_blob_sha": "ad35b3c008ecf124d04cb484a38e08dea9b4909c",
+      "sha256": "26a84ffbb977ebd74b5acc133fcefe65d15aa3183839029668b372bdfc2db510"
+    },
+    {
+      "path": "src/lib/sets/relics/MusketeerOfWildWheat.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/MusketeerOfWildWheat.ts",
+      "git_blob_sha": "3415d303164e405a8196957e14e0ce9d308d6a63",
+      "sha256": "85ed969cb31780bf0d7454ef7a58a195f27e5d2c7cac02718526c0cf7f150357"
+    },
+    {
+      "path": "src/lib/sets/relics/PasserbyOfWanderingCloud.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/PasserbyOfWanderingCloud.ts",
+      "git_blob_sha": "64e0c84cc9c39e52f6ebc141feddede0b3c9b96d",
+      "sha256": "3ff75aa7fc29b39305c73ee2ba1f88d3e9cd5ce0e7d49ce025801477112dce89"
+    },
+    {
+      "path": "src/lib/sets/relics/PioneerDiverOfDeadWaters.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/PioneerDiverOfDeadWaters.ts",
+      "git_blob_sha": "ec9c517467d60eb576747ff3dbdd445a41d83fb1",
+      "sha256": "ff9f5651dae626685b27f4d995e83e72f702c71b6f15cd6718ab5ea1ff0b7d99"
+    },
+    {
+      "path": "src/lib/sets/relics/PoetOfMourningCollapse.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/PoetOfMourningCollapse.ts",
+      "git_blob_sha": "e95724ca7eadd1afe40d79addf0f8dbb3e090b17",
+      "sha256": "2dbc1bb1b6bb70bf906cab4ae6a6f47cf401d152b4e4e7ebf1f6a4373352b6aa"
+    },
+    {
+      "path": "src/lib/sets/relics/PrisonerInDeepConfinement.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/PrisonerInDeepConfinement.ts",
+      "git_blob_sha": "53c4db9cf4e9c9cdc07fbad881436872c5c310f8",
+      "sha256": "08b8099802f94a5bfa1c2995952c4673b569668789de2bcf8b1a6fa92d5074ad"
+    },
+    {
+      "path": "src/lib/sets/relics/SacerdosRelivedOrdeal.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/SacerdosRelivedOrdeal.ts",
+      "git_blob_sha": "49e20905502c552173373af74c15987f7c6524a5",
+      "sha256": "d46efd0607dccd8137b03162c9e86e98209e07a1af6e097c538971184159fbe7"
+    },
+    {
+      "path": "src/lib/sets/relics/ScholarLostInErudition.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/ScholarLostInErudition.ts",
+      "git_blob_sha": "7f19a5b9fc60b7b249532455f042f9a69b969c85",
+      "sha256": "c2c2cab9137c8e1114e4f147fc955adb5d4ed887d1f3b5e799508127ec2f4b9b"
+    },
+    {
+      "path": "src/lib/sets/relics/SelfEnshroudedRecluse.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/SelfEnshroudedRecluse.ts",
+      "git_blob_sha": "279a910663225964746b03bedf36745ccad39d84",
+      "sha256": "18eaeac4d9ccf0074fbbdaa5ada155cedec5b01785b7c8127d17854f6e0aeccc"
+    },
+    {
+      "path": "src/lib/sets/relics/TheAshblazingGrandDuke.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/TheAshblazingGrandDuke.ts",
+      "git_blob_sha": "3f89530b3ff2ad47559df80d1a43fe0cd7540b93",
+      "sha256": "400655f7749c401b629a08fd160d0cb36282bacefb43fd80cdcf9dc7426c8bdb"
+    },
+    {
+      "path": "src/lib/sets/relics/TheEdaciousHeretic.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/TheEdaciousHeretic.ts",
+      "git_blob_sha": "7a3517c8700ed577bd1d2d58f11085008648153b",
+      "sha256": "a2a2e481cee197b5ed978ff461deef3e82d78effefbdbc14d0d7f097b3e272bc"
+    },
+    {
+      "path": "src/lib/sets/relics/TheWindSoaringValorous.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/TheWindSoaringValorous.ts",
+      "git_blob_sha": "73258d5ac79431c0a6b8f684efbe5faf4cebcb5c",
+      "sha256": "f795d540e8be02c0a655d0e2c1227398f6fcae9a3a0f121a8f962a983fcafb41"
+    },
+    {
+      "path": "src/lib/sets/relics/ThiefOfShootingMeteor.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/ThiefOfShootingMeteor.ts",
+      "git_blob_sha": "1a21ec76bb56a820d239c83734e5e1686f906d6a",
+      "sha256": "59b50ffeb4adab8a22a5e2b9e08db72929080bd04ecfd972ae9d39a423d556e3"
+    },
+    {
+      "path": "src/lib/sets/relics/WarriorGoddessOfSunAndThunder.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/WarriorGoddessOfSunAndThunder.ts",
+      "git_blob_sha": "0aff5f5c4e962cfc503cd8e6eea37bc0a2509f30",
+      "sha256": "3a71866dfb15ed96f6f6969ee0df5bf6dbb3ad8dc2eb50737e7fa44fa8943877"
+    },
+    {
+      "path": "src/lib/sets/relics/WastelanderOfBanditryDesert.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/WastelanderOfBanditryDesert.ts",
+      "git_blob_sha": "33133b8f94701946fa3184b51a13b0b2eb33544a",
+      "sha256": "7121c2e18edd64c5d3f0b51cc130bbf254e67c2bbb7a2f82bbc6f67770089220"
+    },
+    {
+      "path": "src/lib/sets/relics/WatchmakerMasterOfDreamMachinations.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/WatchmakerMasterOfDreamMachinations.ts",
+      "git_blob_sha": "d105d1bc303f2472089e6b718180c992b2290eef",
+      "sha256": "55eab856364ca62fe5204e61f0ee94326bcbcf2375f40ecb76e425f2e61634e8"
+    },
+    {
+      "path": "src/lib/sets/relics/WavestriderCaptain.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/WavestriderCaptain.ts",
+      "git_blob_sha": "4dc03374de95c44a6e77d71af7b9431edbb81b49",
+      "sha256": "b2c2d3e1c3d91b549cb466398d9ca11cff57d15f3fc600978d48132259f603c8"
+    },
+    {
+      "path": "src/lib/sets/relics/WorldRemakingDeliverer.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/WorldRemakingDeliverer.ts",
+      "git_blob_sha": "fe15fedc9b2da6bbc1a3757f4904a7fbc3869a3b",
+      "sha256": "a1674f16211b1d4420cb33f8d0502271a49eaa86452f0ac1d7209aebef397c7d"
+    },
+    {
+      "path": "src/lib/sets/relics/elementalRelicSets.test.ts",
+      "url": "https://raw.githubusercontent.com/fribbels/hsr-optimizer/a44c5d3ae2f1ed5907055a16c264bdc2392cf131/src/lib/sets/relics/elementalRelicSets.test.ts",
+      "git_blob_sha": "723a645925e2f0e52fc3eb9c4bccc0aa2e0e6d98",
+      "sha256": "c687e4eeae9346f7a88740448840c0b8225fe0609f2662e59f0ba2ea7638b6f0"
+    },
+    {
+      "path": "index_min/cn/character_promotions.json",
+      "url": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487/index_min/cn/character_promotions.json",
+      "git_blob_sha": "bd6ea6208639aff330b7d37d2f9843d9a49ac74d",
+      "sha256": "05465445f7aa0c51b7fb07243d892dfd7e572aa312d0c225a2e5fb2bbd7df4e9"
+    },
+    {
+      "path": "index_min/cn/relic_main_affixes.json",
+      "url": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487/index_min/cn/relic_main_affixes.json",
+      "git_blob_sha": "15f8386982d8dfc3222b8120b27a758d64d9fe45",
+      "sha256": "b7bd60c459b67814048d13be368e2ec24355f9e4ff9d8ef872676990dc7fc52b"
+    },
+    {
+      "path": "index_min/cn/relic_sets.json",
+      "url": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487/index_min/cn/relic_sets.json",
+      "git_blob_sha": "118a77d298077ab599e7fa5dab3772e72fc2ce21",
+      "sha256": "1a73f8b0f0e55fcdaf2e9cd5d9494d72e5a17482e8d1c534ac5e1dd4e6603930"
+    },
+    {
+      "path": "index_min/cn/relic_sub_affixes.json",
+      "url": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487/index_min/cn/relic_sub_affixes.json",
+      "git_blob_sha": "06616f1489f91a4bed692ab9a1f71abcca2d7803",
+      "sha256": "1e6b25427093179df90a0a474093fb11cb233c02cd8edfef40d8131ebc51a083"
+    },
+    {
+      "path": "index_min/cn/relics.json",
+      "url": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/dbe8cdfcfb0bf657b9fe1cf92d5537f118ccb487/index_min/cn/relics.json",
+      "git_blob_sha": "dcf66ad7e438feebd51ceff65154e81c31f6ceed",
+      "sha256": "b21d306b5fae15a3a66aef8eead4a5403c5f801d4b87c1b33615e4906275540a"
+    }
+  ],
+  "catalog_set_count": 64,
+  "nanoka_set_count": 64,
+  "corroborated_new_set_ids": [
+    "329",
+    "330"
+  ],
+  "preview_profile_count": 109,
+  "active_profile_count": 86,
+  "unresolved_profiles": [
+    {
+      "character_id": "1009",
+      "character_key": "Asta",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1005",
+      "character_key": "Kafka",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1006",
+      "character_key": "SilverWolf",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1006b1",
+      "character_key": "SilverWolfB1",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1004",
+      "character_key": "Welt",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1106",
+      "character_key": "Pela",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1102",
+      "character_key": "Seele",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1205",
+      "character_key": "Blade",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1208",
+      "character_key": "FuXuan",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1210",
+      "character_key": "Guinaifen",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1215",
+      "character_key": "Hanya",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1217",
+      "character_key": "Huohuo",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1218",
+      "character_key": "Jiaoqiu",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1212",
+      "character_key": "Jingliu",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1222",
+      "character_key": "Lingsha",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1202",
+      "character_key": "Tingyun",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1207",
+      "character_key": "Yukong",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1307",
+      "character_key": "BlackSwan",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1310",
+      "character_key": "Firefly",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1301",
+      "character_key": "Gallagher",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1303",
+      "character_key": "RuanMei",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "1306",
+      "character_key": "Sparkle",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "8009",
+      "character_key": "TrailblazerElationCaelus",
+      "reason": "no_static_target_set_plan"
+    },
+    {
+      "character_id": "8010",
+      "character_key": "TrailblazerElationStelle",
+      "reason": "no_static_target_set_plan"
+    }
+  ],
+  "excluded_profiles": [],
+  "retained_profiles": [
+    {
+      "profile": "1006b1:SilverWolfB1:fribbels_default",
+      "reason": "upstream_no_static_plan_retained_previous",
+      "profile_sha256": "3abf155f2a98f53ade1cd6627eecb5bdc4a45090022997ca76edfea3c4601e64"
+    }
+  ],
+  "previous_config_sha256": "18237617603b51babde6811a0ce9d680cfb5e2f01a78c81c8171fc49e8b2deaf",
+  "override_sha256": "9436fea3841f540d8c4405f248791fdaa7c39f4cc3a3b940f77fe1e7d4ad80a1",
+  "global_stop_threshold": 6.5,
+  "files": {
+    "assets/data/relic_database/relic_sets.json": "1a73f8b0f0e55fcdaf2e9cd5d9494d72e5a17482e8d1c534ac5e1dd4e6603930",
+    "assets/data/relic_database/relics.json": "b21d306b5fae15a3a66aef8eead4a5403c5f801d4b87c1b33615e4906275540a",
+    "assets/data/relic_database/relic_main_affixes.json": "b7bd60c459b67814048d13be368e2ec24355f9e4ff9d8ef872676990dc7fc52b",
+    "assets/data/relic_database/relic_sub_affixes.json": "1e6b25427093179df90a0a474093fb11cb233c02cd8edfef40d8131ebc51a083",
+    "assets/data/relic_database/character_promotions.json": "05465445f7aa0c51b7fb07243d892dfd7e572aa312d0c225a2e5fb2bbd7df4e9",
+    "assets/data/relic_database/catalog.json": "93f5a0a996c3160b633f3f17f20cf2fe135507f71c7f1089d5b39e0bdaaafba0",
+    "assets/data/relic_database/nanoka_relicset.json": "99a54d77c3b679d0a0c53bd6139dd222607a52847d185bb74126081ac351a93c",
+    "assets/data/relic_database/fribbels_set_ids.json": "7c5924ef997fcc97464d79ecff1b1aa23f0e07df0d8ea5578d8524a3996efbc7",
+    "assets/config/relic_scoring.fribbels.generated.yaml": "6fdc7d986c1ca92f2902ed6b3a9e5e539eaed1c6712e82e62a1af93d98ea47b2"
+  }
+}

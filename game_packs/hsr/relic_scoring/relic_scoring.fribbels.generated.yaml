@@ -1,0 +1,3254 @@
+# Generated from pinned Fribbels metadata; edit relic_scoring.overrides.yaml for local changes.
+active_profiles:
+  '1001': 1001:March7th:fribbels_default
+  '1002': 1002:DanHeng:fribbels_default
+  '1003': 1003:Himeko:fribbels_default
+  1004b1: 1004b1:WeltB1:fribbels_default
+  1005b1: 1005b1:KafkaB1:fribbels_default
+  1006b1: 1006b1:SilverWolfB1:fribbels_default
+  '1008': 1008:Arlan:fribbels_default
+  '1013': 1013:Herta:fribbels_default
+  '1014': 1014:Saber:fribbels_default
+  '1015': 1015:Archer:fribbels_default
+  '1101': 1101:Bronya:fribbels_default
+  1102b1: 1102b1:SeeleB1:fribbels_default
+  '1103': 1103:Serval:fribbels_default
+  '1104': 1104:Gepard:fribbels_default
+  '1105': 1105:Natasha:fribbels_default
+  '1107': 1107:Clara:fribbels_default
+  '1108': 1108:Sampo:fribbels_default
+  '1109': 1109:Hook:fribbels_default
+  '1110': 1110:Lynx:fribbels_default
+  '1111': 1111:Luka:fribbels_default
+  '1112': 1112:Topaz:fribbels_default
+  '1201': 1201:Qingque:fribbels_default
+  '1203': 1203:Luocha:fribbels_default
+  '1204': 1204:JingYuan:fribbels_default
+  1205b1: 1205b1:BladeB1:fribbels_default
+  '1206': 1206:Sushang:fribbels_default
+  '1209': 1209:Yanqing:fribbels_default
+  '1211': 1211:Bailu:fribbels_default
+  1212b1: 1212b1:JingliuB1:fribbels_default
+  '1213': 1213:ImbibitorLunae:fribbels_default
+  '1214': 1214:Xueyi:fribbels_default
+  1217b1: 1217b1:HuohuoB1:fribbels_default
+  '1220': 1220:Feixiao:fribbels_default
+  '1221': 1221:Yunli:fribbels_default
+  '1223': 1223:Moze:fribbels_default
+  '1224': 1224:March7thImaginary:fribbels_default
+  '1225': 1225:Fugue:fribbels_default
+  '1302': 1302:Argenti:fribbels_default
+  '1304': 1304:Aventurine:fribbels_default
+  '1305': 1305:DrRatio:fribbels_default
+  1306b1: 1306b1:SparkleB1:fribbels_default
+  1307b1: 1307b1:BlackSwanB1:fribbels_default
+  '1308': 1308:Acheron:fribbels_default
+  '1309': 1309:Robin:fribbels_default
+  1310b1: 1310b1:FireflyB1:fribbels_default
+  '1312': 1312:Misha:fribbels_default
+  '1313': 1313:Sunday:fribbels_default
+  '1314': 1314:Jade:fribbels_default
+  '1315': 1315:Boothill:fribbels_default
+  '1317': 1317:Rappa:fribbels_default
+  '1321': 1321:TheDahlia:fribbels_default
+  '1401': 1401:TheHerta:fribbels_default
+  '1402': 1402:Aglaea:fribbels_default
+  '1403': 1403:Tribbie:fribbels_default
+  '1404': 1404:Mydei:fribbels_default
+  '1405': 1405:Anaxa:fribbels_default
+  '1406': 1406:Cipher:fribbels_default
+  '1407': 1407:Castorice:fribbels_default
+  '1408': 1408:Phainon:fribbels_default
+  '1409': 1409:Hyacine:fribbels_default
+  '1410': 1410:Hysilens:fribbels_default
+  '1412': 1412:Cerydra:fribbels_default
+  '1413': 1413:Evernight:fribbels_default
+  '1414': 1414:PermansorTerrae:fribbels_default
+  '1415': 1415:Cyrene:fribbels_default
+  '1501': 1501:Sparxie:fribbels_default
+  '1502': 1502:Yaoguang:fribbels_default
+  '1503': 1503:Pearl:fribbels_default
+  '1504': 1504:Ashveil:fribbels_default
+  '1505': 1505:Evanescia:fribbels_default
+  '1506': 1506:SilverWolfLv999:fribbels_default
+  '1507': 1507:MortenaxBlade:fribbels_default
+  '1508': 1508:RinTohsaka:fribbels_default
+  '1509': 1509:Gilgamesh:fribbels_default
+  '1510': 1510:HimekoNova:fribbels_default
+  '1511': 1511:AeonAha:fribbels_default
+  '1512': 1512:RobinSummeretto:fribbels_default
+  '1513': 1513:AventurineWaveflair:fribbels_default
+  '8001': 8001:TrailblazerDestructionCaelus:fribbels_default
+  '8002': 8002:TrailblazerDestructionStelle:fribbels_default
+  '8003': 8003:TrailblazerPreservationCaelus:fribbels_default
+  '8004': 8004:TrailblazerPreservationStelle:fribbels_default
+  '8005': 8005:TrailblazerHarmonyCaelus:fribbels_default
+  '8006': 8006:TrailblazerHarmonyStelle:fribbels_default
+  '8007': 8007:TrailblazerRemembranceCaelus:fribbels_default
+  '8008': 8008:TrailblazerRemembranceStelle:fribbels_default
+global_stop_threshold: 6.5
+profiles:
+  1001:March7th:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      - Effect Hit Rate_
+      Feet:
+      - DEF_
+      - SPD
+      Link Rope:
+      - DEF_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  1002:DanHeng:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1003:Himeko:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Fire DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '115'
+      planar: '315'
+  1004b1:WeltB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Imaginary DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '309'
+  1005b1:KafkaB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '322'
+  1006b1:SilverWolfB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - Quantum DMG Boost
+      - ATK_
+      - HP_
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '306'
+  1008:Arlan:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1013:Herta:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '115'
+      planar: '315'
+  1014:Saber:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '126'
+      planar: '306'
+  1015:Archer:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 0.0
+    target_sets:
+      cavern: '126'
+      planar: '309'
+  1101:Bronya:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '121'
+      planar: '310'
+  1102b1:SeeleB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1103:Serval:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '311'
+  1104:Gepard:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      Feet:
+      - DEF_
+      - SPD
+      Link Rope:
+      - DEF_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 0.75
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  1105:Natasha:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - HP_
+      - Outgoing Healing Boost
+      Feet:
+      - HP_
+      - SPD
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '317'
+  1107:Clara:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '105'
+      planar: '315'
+  1108:Sampo:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - Energy Regeneration Rate
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '322'
+  1109:Hook:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Fire DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '309'
+  1110:Lynx:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - HP_
+      - Outgoing Healing Boost
+      Feet:
+      - HP_
+      - SPD
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '317'
+  1111:Luka:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '307'
+  1112:Topaz:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Fire DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '115'
+      planar: '315'
+  1201:Qingque:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1203:Luocha:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - Outgoing Healing Boost
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - HP_
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '317'
+  1204:JingYuan:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '115'
+      planar: '318'
+  1205b1:BladeB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - HP_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      Planar Sphere:
+      - Wind DMG Boost
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '113'
+      planar: '319'
+  1206:Sushang:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '311'
+  1209:Yanqing:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1211:Bailu:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - Outgoing Healing Boost
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '317'
+  1212b1:JingliuB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - HP_
+      Feet:
+      - HP_
+      - SPD
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '319'
+  1213:ImbibitorLunae:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Imaginary DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '102'
+      planar: '309'
+  1214:Xueyi:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - Quantum DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 1.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '108'
+      planar: '307'
+  1217b1:HuohuoB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - HP_
+      - Outgoing Healing Boost
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '320'
+  1220:Feixiao:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '120'
+      planar: '315'
+  1221:Yunli:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '120'
+      planar: '315'
+  1223:Moze:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '315'
+  1224:March7thImaginary:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - Break Effect_
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '119'
+      planar: '307'
+  1225:Fugue:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      - Break Effect_
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '111'
+      planar: '316'
+  1302:Argenti:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Physical DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '306'
+  1304:Aventurine:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - DEF_
+      - SPD
+      Link Rope:
+      - DEF_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Imaginary DMG Boost
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.25
+      CRIT Rate_: 0.25
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  1305:DrRatio:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Imaginary DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '315'
+  1306b1:SparkleB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '121'
+      planar: '310'
+  1307b1:BlackSwanB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - Wind DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '322'
+  1308:Acheron:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - Lightning DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '314'
+  1309:Robin:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '317'
+  1310b1:FireflyB1:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.5
+      ATK_: 0.5
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '119'
+      planar: '316'
+  1312:Misha:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1313:Sunday:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      Feet: []
+      Link Rope:
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '121'
+      planar: '310'
+  1314:Jade:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '115'
+      planar: '315'
+  1315:Boothill:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Break Effect_
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.25
+      ATK_: 0.25
+      Break Effect_: 1.0
+      CRIT DMG_: 0.25
+      CRIT Rate_: 0.25
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '111'
+      planar: '307'
+  1317:Rappa:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Break Effect_
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.5
+      ATK_: 0.5
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '119'
+      planar: '307'
+  1321:TheDahlia:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      - Break Effect_
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '119'
+      planar: '316'
+  1401:TheHerta:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '314'
+  1402:Aglaea:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.5
+      ATK_: 0.5
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '123'
+      planar: '318'
+  1403:Tribbie:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - HP_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Quantum DMG Boost
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '108'
+      planar: '319'
+  1404:Mydei:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - HP_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      Planar Sphere:
+      - Imaginary DMG Boost
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '319'
+  1405:Anaxa:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  1406:Cipher:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.5
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '117'
+      planar: '306'
+  1407:Castorice:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - HP_
+      Feet:
+      - HP_
+      Link Rope:
+      - HP_
+      Planar Sphere:
+      - HP_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 0.0
+    target_sets:
+      cavern: '124'
+      planar: '319'
+  1408:Phainon:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '126'
+      planar: '309'
+  1409:Hyacine:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - HP_
+      - Outgoing Healing Boost
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '125'
+      planar: '320'
+  1410:Hysilens:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Physical DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 1.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '116'
+      planar: '322'
+  1412:Cerydra:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.75
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '121'
+      planar: '317'
+  1413:Evernight:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - HP_
+      Feet:
+      - HP_
+      - SPD
+      Link Rope:
+      - HP_
+      Planar Sphere:
+      - HP_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '127'
+      planar: '319'
+  1414:PermansorTerrae:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - ATK_
+      - Effect Hit Rate_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - Energy Regeneration Rate
+      - ATK_
+      Planar Sphere:
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 1.0
+      ATK_: 1.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  1415:Cyrene:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - HP_
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      Planar Sphere:
+      - HP_
+      - Ice DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '127'
+      planar: '319'
+  1501:Sparxie:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - SPD
+      - ATK_
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Fire DMG Boost
+      - ATK_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '129'
+      planar: '324'
+  1502:Yaoguang:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - SPD
+      Link Rope:
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '129'
+      planar: '324'
+  1503:Pearl:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      - Outgoing Healing Boost
+      Feet:
+      - SPD
+      - DEF_
+      Link Rope:
+      - Energy Regeneration Rate
+      - DEF_
+      Planar Sphere:
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '101'
+      planar: '317'
+  1504:Ashveil:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 0.0
+    target_sets:
+      cavern: '115'
+      planar: '326'
+  1505:Evanescia:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet: []
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.25
+      ATK_: 0.25
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 0.0
+    target_sets:
+      cavern: '129'
+      planar: '325'
+  1506:SilverWolfLv999:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - SPD
+      Link Rope: []
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '129'
+      planar: '325'
+  1507:MortenaxBlade:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - CRIT Rate_
+      - HP_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - Fire DMG Boost
+      - HP_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '132'
+      planar: '319'
+  1508:RinTohsaka:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Quantum DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '108'
+      planar: '324'
+  1509:Gilgamesh:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Lightning DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '328'
+  1510:HimekoNova:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - ATK_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - ATK_
+      - Fire DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '131'
+      planar: '327'
+  1511:AeonAha:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - SPD
+      Link Rope: []
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '129'
+      planar: '329'
+  1512:RobinSummeretto:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - HP_
+      Feet:
+      - SPD
+      - HP_
+      Link Rope:
+      - HP_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - HP_
+      - Wind DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 1.0
+      HP_: 1.0
+      SPD: 1.0
+    target_sets:
+      cavern: '127'
+      planar: '323'
+  1513:AventurineWaveflair:fribbels_default:
+    cavern_set_effects:
+    - coverage: 1.0
+      stat: CRIT DMG_
+      value: 16.0
+    - coverage: 1.0
+      stat: DEF PEN
+      value: 20.0
+      weight: 1.0
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.25
+      ATK_: 0.25
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '129'
+      planar: '325'
+  8001:TrailblazerDestructionCaelus:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  8002:TrailblazerDestructionStelle:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT Rate_
+      - CRIT DMG_
+      - Effect Hit Rate_
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Break Effect_
+      Planar Sphere:
+      - ATK_
+      - Physical DMG Boost
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: additive
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.75
+      ATK_: 0.75
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 1.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.0
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '122'
+      planar: '309'
+  8003:TrailblazerPreservationCaelus:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      Feet:
+      - DEF_
+      - SPD
+      Link Rope:
+      - DEF_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 0.75
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  8004:TrailblazerPreservationStelle:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - DEF_
+      Feet:
+      - DEF_
+      - SPD
+      Link Rope:
+      - DEF_
+      - Energy Regeneration Rate
+      Planar Sphere:
+      - DEF_
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 1.0
+      DEF_: 1.0
+      Effect Hit Rate_: 0.75
+      Effect RES_: 0.5
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '128'
+      planar: '317'
+  8005:TrailblazerHarmonyCaelus:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Break Effect_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '118'
+      planar: '316'
+  8006:TrailblazerHarmonyStelle:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body: []
+      Feet:
+      - SPD
+      Link Rope:
+      - Break Effect_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 1.0
+      CRIT DMG_: 0.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '118'
+      planar: '316'
+  8007:TrailblazerRemembranceCaelus:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - Outgoing Healing Boost
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '127'
+      planar: '310'
+  8008:TrailblazerRemembranceStelle:fribbels_default:
+    cavern_set_effects: []
+    main_stat_score_policy: gate_only
+    main_stats:
+      Body:
+      - CRIT DMG_
+      - Outgoing Healing Boost
+      Feet:
+      - ATK_
+      - SPD
+      Link Rope:
+      - ATK_
+      - Energy Regeneration Rate
+      Planar Sphere: []
+    planar_set_effects: []
+    require_main_stat: true
+    require_target_set: true
+    scoring_policy: set_first
+    set_score_policy: gate_only
+    stat_weights:
+      ATK: 0.0
+      ATK_: 0.0
+      Break Effect_: 0.0
+      CRIT DMG_: 1.0
+      CRIT Rate_: 0.0
+      DEF: 0.0
+      DEF_: 0.0
+      Effect Hit Rate_: 0.0
+      Effect RES_: 0.25
+      HP: 0.0
+      HP_: 0.0
+      SPD: 1.0
+    target_sets:
+      cavern: '127'
+      planar: '310'

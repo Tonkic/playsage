@@ -1,0 +1,23 @@
+id: hsr.example-event
+game: hsr
+name: 示例活动（仅模拟）
+gameplay: ui.demo
+version: 0.1.0
+status: candidate
+compatibility:
+  resolution: [1920, 1080]
+  game_version: simulated
+execution:
+  preferred_backend: mock
+  supported_backends: [mock]
+entrypoints:
+  mock:
+    type: python
+    path: scripts/policy.py
+verification:
+  required_scene: challenge_complete
+  fresh_screenshot: true
+limits:
+  max_retries: 0
+  timeout_seconds: 30
+  max_actions: 3

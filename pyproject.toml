@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "playsage"
+version = "0.1.0"
+description = "PlaySage: evidence-backed game knowledge, memory and guarded execution"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.10,<3", "PyYAML>=6.0,<7", "mcp>=1.12,<2", "Pillow>=11,<13"]
+
+[project.scripts]
+playsage = "playsage.cli:main"
+questweaver = "questweaver.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["third_party", "runs", "tools/child-session/obj", "tools/child-session/bin"]
+
+[tool.hatch.build]
+exclude = ["/third_party", "/runs", "/data", "/tools/child-session/obj", "/tools/child-session/bin"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/playsage", "src/questweaver"]
+
+[tool.uv]
+prerelease = "disallow"
