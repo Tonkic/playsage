@@ -225,6 +225,6 @@ OKWW 安装版的输入回归需显式设置 `OKWW_WORKING_DIR`，默认跳过�
 
 每轮改动都按[文档规范](docs/documentation-standard.md)检查影响；无需修改时记录理由，证据不足时明确标记未验证。
 
-文档同步工作流的本地配置位于 `.github/workflows/docs-sync.md`，由官方 `gh-aw` 编译生成 `.lock.yml`。设计入口为每次分支 push，必要时提出受白名单限制的文档草稿 PR，由人审阅合并；不直接写目标分支。当前只做本地准备，不表示已启用 GitHub 自动化。编译、校验、安全边界和剩余部署条件见[工作流准备与验证](docs/documentation-workflow.md)。
+文档同步工作流位于 `.github/workflows/docs-sync-tonkic.yml`，由普通 GitHub Actions 调用 TonKic 的 OpenAI 兼容接口 `https://tonkicapi.xyz/v1/chat/completions`。模型审阅只返回白名单文档的完整文本，独立发布 job 经过静态守卫后创建草稿 PR，由人审阅合并；不直接写目标分支。配置方式、权限边界和验证记录见[工作流准备与验证](docs/documentation-workflow.md)。
 
 项目不打包上游框架，不修改用户全局 Codex 配置，不绕过反作弊。第三方依赖按各自的安装和许可要求独立管理。

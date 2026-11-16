@@ -203,17 +203,20 @@ def test_prepare_and_guard_cli_write_commit_bound_summary(repo, tmp_path, monkey
     assert sync.main(["guard", *common, "--report", str(proposal)]) == 1
 
 
-def test_source_allowlist_matches_guard():
-    source = (ROOT / ".github/workflows/docs-sync.md").read_text(encoding="utf-8")
-    config = yaml.safe_load(source.split("---", 2)[1])
-    pr = config["safe-outputs"]["create-pull-request"]
-    assert pr["allowed-files"] == list(sync.ALLOWED_FILES)
-    assert pr["draft"] is True
-    assert pr["branch-prefix"] == sync.BOT_PREFIX
-    assert config["permissions"] == {"contents": "read"}
-    assert "push-to-pull-request-branch" not in config["safe-outputs"]
-    assert "create-issue" not in config["safe-outputs"]
-    assert "paths-ignore" not in source
+def test_tonkic_workflow_preserves_publication_boundary():
+    workflow = yaml.safe_load((ROOT / ".github/workflows/docs-sync-tonkic.yml").read_text(
+        encoding="utf-8"))
+    jobs = workflow["jobs"]
+    assert jobs["review"]["permissions"] == {"contents": "read"}
+    assert jobs["publish"]["permissions"] == {
+        "contents": "write", "pull-requests": "write"}
+    review_text = (ROOT / ".github/workflows/docs-sync-tonkic.yml").read_text(encoding="utf-8")
+    assert "TONKIC_API_KEY: ${{ secrets.TONKIC_API_KEY }}" in review_text
+    assert "TONKIC_API_MODEL: ${{ vars.TONKIC_API_MODEL }}" in review_text
+    assert "python3 -I tools/tonkic_docs_sync.py" in review_text
+    assert "python3 -I tools/docs_sync.py guard" in review_text
+    assert "gh pr create --draft" in review_text
+    assert "COPILOT_GITHUB_TOKEN" not in review_text
 
 
 def test_guard_script_cli_is_standalone():
@@ -229,81 +232,6 @@ def test_staged_forbidden_change_cannot_hide_behind_restored_worktree(repo):
     save(root, "src/example.py", "VALUE = 1\n")
     with pytest.raises(sync.ReviewError, match="allowlist"):
         sync.validate_proposal(root, head)
-
-
-def test_compiled_workflow_preserves_publication_gates():
-    source = yaml.safe_load((ROOT / ".github/workflows/docs-sync.md").read_text(
-        encoding="utf-8").split("---", 2)[1])
-    lock = yaml.load((ROOT / ".github/workflows/docs-sync.lock.yml").read_text(
-        encoding="utf-8"), Loader=yaml.BaseLoader)
-    assert lock["on"]["push"] == {"branches-ignore": ["gh-aw/**"]}
-    assert lock["concurrency"]["queue"] == "max"
-    assert lock["concurrency"]["cancel-in-progress"] == "false"
-    jobs = lock["jobs"]
-    assert "PLAYSAGE_DOCS_SYNC_ENABLED" in jobs["pre_activation"]["if"]
-    assert jobs["agent"]["permissions"] == {"contents": "read"}
-    assert jobs["safe_outputs"]["permissions"] == {
-        "contents": "write", "pull-requests": "write"}
-    assert "needs.agent.result == 'success'" in jobs["safe_outputs"]["if"]
-    assert "needs.detection.result == 'success'" in jobs["safe_outputs"]["if"]
-    agent_steps = jobs["agent"]["steps"]
-    guard = next(s for s in agent_steps if s.get("name") == source["post-steps"][0]["name"])
-    assert guard["run"] == source["post-steps"][0]["run"]
-    assert "continue-on-error" not in guard
-    assert "$SOURCE_SHA:tools/docs_sync.py" in guard["run"]
-    outputs = jobs["safe_outputs"]["steps"]
-    gate_index = next(i for i, s in enumerate(outputs)
-                      if s.get("name") == source["safe-outputs"]["steps"][0]["name"])
-    publish_index = next(i for i, s in enumerate(outputs)
-                         if s.get("name") == "Process Safe Outputs")
-    assert gate_index < publish_index
-    assert outputs[gate_index]["run"] == source["safe-outputs"]["steps"][0]["run"]
-    assert "continue-on-error" not in outputs[gate_index]
-    assert "if" not in outputs[publish_index]  # Default success() must honor a failed gate.
-    for job in jobs.values():
-        for step in job.get("steps", []):
-            if "uses" in step:
-                assert sync.SHA.fullmatch(step["uses"].rsplit("@", 1)[1])
-    conclusion = jobs["conclusion"]["steps"]
-    assert all(s.get("name") != "Process Safe Outputs" for s in conclusion)
-    env = {key: value for s in conclusion for key, value in s.get("env", {}).items()}
-    assert env["GH_AW_NOOP_REPORT_AS_ISSUE"] == "false"
-    assert env["GH_AW_FAILURE_REPORT_AS_ISSUE"] == "false"
-    assert env["GH_AW_MISSING_TOOL_CREATE_ISSUE"] == "false"
-    assert env["GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE"] == "false"
-
-
-@pytest.mark.parametrize("mode", ["current", "advanced", "unavailable"])
-def test_publication_tip_guard_without_network(tmp_path, monkeypatch, mode):
-    import io
-    import runpy
-    import urllib.request
-
-    source = yaml.safe_load((ROOT / ".github/workflows/docs-sync.md").read_text(
-        encoding="utf-8").split("---", 2)[1])
-    script = source["safe-outputs"]["steps"][0]["run"].split("\n", 1)[1].rsplit("\nPY", 1)[0]
-    script_path = tmp_path / "publication_tip_guard.py"
-    script_path.write_text(script, encoding="utf-8")
-    monkeypatch.setenv("SOURCE_SHA", "a" * 40)
-    monkeypatch.setenv("SOURCE_BRANCH", "feature/docs")
-    monkeypatch.setenv("GITHUB_API_URL", "https://api.example.invalid")
-    monkeypatch.setenv("GITHUB_REPOSITORY", "fixture/repository")
-    monkeypatch.setenv("GH_TOKEN", "fixture-not-a-secret")
-    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(tmp_path / "summary.md"))
-
-    def fake_open(request, timeout):
-        assert request.full_url.endswith("/commits/feature%2Fdocs")
-        assert timeout == 30
-        if mode == "unavailable":
-            raise OSError("offline fixture")
-        return io.StringIO(json.dumps({"sha": ("a" if mode == "current" else "b") * 40}))
-
-    monkeypatch.setattr(urllib.request, "urlopen", fake_open)
-    if mode == "current":
-        runpy.run_path(str(script_path))
-    else:
-        with pytest.raises(SystemExit if mode == "advanced" else OSError):
-            runpy.run_path(str(script_path))
 
 
 def test_project_documentation_links():

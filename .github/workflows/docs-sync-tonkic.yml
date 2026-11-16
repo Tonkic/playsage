@@ -1,0 +1,123 @@
+name: PlaySage documentation sync (TonKic API)
+
+on:
+  push:
+    branches-ignore:
+      - "gh-aw/**"
+
+concurrency:
+  group: playsage-docs-sync-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  review:
+    if: vars.PLAYSAGE_DOCS_SYNC_ENABLED == 'true' && github.event.deleted == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare exact push range
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/gh-aw/docs-sync
+          python3 -I tools/docs_sync.py prepare \
+            --root "$GITHUB_WORKSPACE" --event "$GITHUB_EVENT_PATH" \
+            --head "$SOURCE_SHA" --output /tmp/gh-aw/docs-sync
+
+      - name: Review documentation with TonKic API
+        env:
+          TONKIC_API_KEY: ${{ secrets.TONKIC_API_KEY }}
+          TONKIC_API_BASE: ${{ vars.TONKIC_API_BASE }}
+          TONKIC_API_MODEL: ${{ vars.TONKIC_API_MODEL }}
+          DOCS_CONTEXT: /tmp/gh-aw/docs-sync/context.json
+          DOCS_DIFF: /tmp/gh-aw/docs-sync/changes.diff
+          DOCS_REPORT: /tmp/gh-aw/docs-sync-report.json
+        run: |
+          set -euo pipefail
+          python3 -I tools/tonkic_docs_sync.py
+
+      - name: Stage bounded review result
+        run: |
+          set -euo pipefail
+          mkdir -p review-artifact/docs
+          cp /tmp/gh-aw/docs-sync-report.json review-artifact/report.json
+          cp README.md review-artifact/README.md
+          cp docs/design.md review-artifact/docs/design.md
+          if [ -f docs/evidence-memory.md ]; then cp docs/evidence-memory.md review-artifact/docs/evidence-memory.md; fi
+          if [ -f docs/rename-playsage.md ]; then cp docs/rename-playsage.md review-artifact/docs/rename-playsage.md; fi
+
+      - name: Upload bounded review result
+        uses: actions/upload-artifact@v4
+        with:
+          name: tonkic-docs-review-${{ github.sha }}
+          if-no-files-found: error
+          path: review-artifact
+
+  publish:
+    needs: review
+    if: needs.review.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout source commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ github.token }}
+
+      - name: Download bounded review result
+        uses: actions/download-artifact@v4
+        with:
+          name: tonkic-docs-review-${{ github.sha }}
+          path: /tmp/gh-aw/docs-sync-review
+
+      - name: Restore reviewed documents
+        run: |
+          set -euo pipefail
+          cp /tmp/gh-aw/docs-sync-review/README.md README.md
+          cp /tmp/gh-aw/docs-sync-review/docs/design.md docs/design.md
+          if [ -f /tmp/gh-aw/docs-sync-review/docs/evidence-memory.md ]; then cp /tmp/gh-aw/docs-sync-review/docs/evidence-memory.md docs/evidence-memory.md; fi
+          if [ -f /tmp/gh-aw/docs-sync-review/docs/rename-playsage.md ]; then cp /tmp/gh-aw/docs-sync-review/docs/rename-playsage.md docs/rename-playsage.md; fi
+
+      - name: Validate report and documentation scope
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python3 -I tools/docs_sync.py guard \
+            --root "$GITHUB_WORKSPACE" --event "$GITHUB_EVENT_PATH" \
+            --head "$SOURCE_SHA" --report /tmp/gh-aw/docs-sync-review/report.json \
+            --check-remote
+
+      - name: Create draft documentation pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_BRANCH: ${{ github.ref_name }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet --exit-code -- README.md docs/design.md docs/evidence-memory.md docs/rename-playsage.md; then
+            exit 0
+          fi
+          branch="gh-aw/docs-sync/tonkic-${SOURCE_SHA:0:12}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- README.md docs/design.md docs/evidence-memory.md docs/rename-playsage.md
+          git commit -m "docs: propose TonKic documentation sync"
+          git push --set-upstream origin "$branch"
+          reason=$(python3 -c 'import json; print(json.load(open("/tmp/gh-aw/docs-sync-review/report.json", encoding="utf-8"))["reason"])')
+          gh pr create --draft --base "$SOURCE_BRANCH" --head "$branch" \
+            --title "[docs-sync] propose documentation updates" \
+            --body "检查范围：完整 ${SOURCE_SHA} push\n文档结果：已更新\n修改说明：${reason}\n验证与限制：已执行范围、白名单、报告和本地链接静态检查；项目测试与实机未验证；请人工审阅 PR diff。"

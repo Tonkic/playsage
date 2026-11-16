@@ -205,23 +205,24 @@ SRA 通过官方 MCP SDK 的 Streamable HTTP 客户端先读取 `tools/list`，�
 
 ### 文档同步工作流
 
-GitHub Agentic Workflow 是独立的开发维护路径，不参与游戏执行。源文件为 `.github/workflows/docs-sync.md`，由固定版本的官方编译器生成 `.lock.yml`。当前只完成本地准备；是否部署及启用需另行确认。
+文档同步是独立的开发维护路径，不参与游戏执行。工作流位于 `.github/workflows/docs-sync-tonkic.yml`，通过 TonKic 的 OpenAI 兼容接口审阅文档，不再依赖 GitHub Copilot 或 gh-aw 编译文件。
 
 ```text
-分支 push → 固定 before/after 提交范围 → 新文档 Agent 静态分析
+分支 push → 固定 before/after 提交范围 → TonKic 静态分析
     ├─ 无影响：带理由的报告，不创建空 PR
     ├─ 缺少必要证据：受阻报告，不猜测
-    └─ 有影响：白名单内最小修改 → 后置检查 → safe output 草稿 PR → 人工审阅
+    └─ 有影响：白名单内最小修改 → 后置检查 → 独立发布 job 创建草稿 PR → 人工审阅
 ```
 
 - 同一分支按队列串行处理，不把一次 push 等同于一次本地 commit。Agent 分支不再触发生成；人工文档修改仍接受检查。
 - 新分支按整棵当前树检查；普通或强推使用明确的前后提交。缺少基准对象时停止，不用父提交替代。
-- Agent 的 GitHub 权限为只读。发布由独立 safe-output job 执行，并以逐文件白名单限制实际补丁；工作流、检查程序和写作规范不在白名单内。
-- 后置检查程序从触发提交读取，以 Python 隔离模式运行，检查工作区改动、报告、文件类型和本地链接。发布前再次核对源分支 SHA；报告不能验收更新后的提交。
-- 不自动合并或直接推送目标分支，不修改历史报告、活动包、运行数据或安全配置。文档内容是否准确仍需人工对照具体 PR diff，静态检查不替代语义审阅。
+- TonKic 审阅 job 只有 `contents: read`；发布 job 才拥有创建分支和草稿 PR 所需的写权限。API Token 只从 `TONKIC_API_KEY` Secret 注入。
+- `TONKIC_API_MODEL` 是必需的仓库变量，`TONKIC_API_BASE` 可选，默认值为 `https://tonkicapi.xyz/v1`。工作流请求 `/chat/completions`，假设 Bearer Token 和 OpenAI Chat Completions 响应格式。
+- Agent 只能返回 `README.md`、`docs/design.md`、`docs/evidence-memory.md`、`docs/rename-playsage.md` 的完整文本；后置检查继续验证提交范围、文件大小、报告字段和本地链接。
+- 工作流、检查程序和写作规范不在白名单内；不自动合并或直接推送目标分支。文档内容仍需人工对照具体 PR diff，静态检查不替代语义审阅。
 - 工作流不执行项目测试或游戏代码，也不采集 CI 测试结果；报告必须标明项目测试和实机未验证。未来如接入测试证据，必须绑定完整 SHA，并单独审阅权限及检查逻辑。
 
-部署条件、生成文件和验证方法见[准备文档同步工作流](documentation-workflow.md)。
+Secret、Variables、启用开关和验证方法见[准备文档同步工作流](documentation-workflow.md)。当前仓库的 API 模型调用和草稿 PR 仍需 GitHub Actions 端到端运行证据，离线检查不能替代该证据。
 
 ## 相关内容
 
