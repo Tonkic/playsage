@@ -21,8 +21,12 @@
     ".github/"
   ],
   "constraints": [],
-  "current": "PlaySage 崩铁模块可离线读取遗器导出并评分，数据来源可追溯，安全边界和文档明确，测试通过后上传 GitHub。",
-  "next": [],
+  "current": "HSR 遗器评分库、Reliquary 模型、pinned 数据和配置已迁移；README 与架构文档已同步；全仓测试和新增 Ruff 检查已通过；GitHub 公开仓库已创建并完成首次推送；已开启 PLAYSAGE_DOCS_SYNC_ENABLED，准备以治理状态更新触发文档 Agent。",
+  "next": [
+    "提交治理进度状态并再次 push",
+    "核对 docs-sync 工作流运行状态",
+    "关闭治理任务并报告链接与限制"
+  ],
   "blocked": [],
   "followUp": null,
   "change": "changes/active/playsage-hsr-relic-migration",
