@@ -99,7 +99,7 @@ def parser():
 
 def dispatch(args):
     root = args.root.resolve()
-    if args.command in {"evidence", "memory", "model"}:
+    if args.command in {"evidence", "memory", "model", "rsi"}:
         from .offline_cli import dispatch_offline
 
         return dispatch_offline(args, root)

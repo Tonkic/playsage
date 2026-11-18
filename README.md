@@ -15,6 +15,7 @@ PlaySage 帮助 Agent 查找游戏活动知识、回看操作证据、保存工�
 | 安装项目并运行模拟示例 | 本页“运行离线示例” |
 | 理解组件、数据流和执行限制 | [架构与执行边界](docs/design.md) |
 | 导入截图、恢复记忆或检查网格规则 | [证据、记忆与离线验证](docs/evidence-memory.md) |
+| 记录 GameScaling-S3 RSI 离线轨迹或评估 | [GameScaling-S3 RSI 离线原型](docs/gamescaling-rsi.md) |
 | 查看历史实机结果 | [后台实测报告](docs/live-background.md)、[第一案报告](docs/live-case1.md)、[鸣潮报告](docs/live-ww.md) |
 | 配置独立 Windows 会话 | [后台桌面分身](docs/child-session.md) |
 | 核对第三方源码和环境 | [第三方项目说明](third_party/README.md) |
@@ -118,6 +119,7 @@ uv run playsage model validate-grid --help
 | 证据回看 | 原图字节与哈希、前后关联、裁剪、像素、差异、容量与清理预览 | 不自动删除，不推断目标完成 |
 | 活动工作记忆 | 包外 JSON、证据引用、版本隔离、修订冲突检测和导出 | 不自动合并，不授权真实重放 |
 | 网格离线回测 | 规则单步预测与历史标注比较 | 不自动提取棋盘，不等于视觉验真 |
+| GameScaling-S3 RSI | JSONL 轨迹、难例筛选、人工接管和 Champion/Challenger 离线评估 | 不采集画面、不发送输入、不训练或修改权重 |
 | SRA | 工具探测、内联 PNG/JPEG 读取与保存 | 只读，尚未接入输入 |
 | OneDragon | 原生截图/OCR、受保护单步操作、网格开发工具 | 独立开发入口，非通用适配器 |
 | 知识与技能 | 四游戏知识包、活动探索和活动包编写技能 | 未验证的后端不能视为可运行 |

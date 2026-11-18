@@ -15,6 +15,45 @@ from .evidence import (
 from .memory import EventMemory
 
 
+def _add_rsi_commands(sub):
+    rsi = sub.add_parser("rsi", help="GameScaling RSI 离线记录与评估；不连接游戏")
+    commands = rsi.add_subparsers(dest="rsi_command", required=True)
+
+    trajectory = commands.add_parser("trajectory", help="导入或查看离线轨迹")
+    trajectory_commands = trajectory.add_subparsers(dest="trajectory_command", required=True)
+    trajectory_import = trajectory_commands.add_parser("import")
+    trajectory_import.add_argument("source", type=Path)
+    trajectory_list = trajectory_commands.add_parser("list")
+    trajectory_list.add_argument("--limit", type=int, default=100)
+
+    hard = commands.add_parser("hard-examples", help="按失败信号筛选难例")
+    hard.add_argument("--limit", type=int, default=100)
+    hard.add_argument("--min-score", type=int, default=1)
+
+    takeover = commands.add_parser("takeover", help="记录人工接管片段")
+    takeover_commands = takeover.add_subparsers(dest="takeover_command", required=True)
+    takeover_add = takeover_commands.add_parser("add")
+    takeover_add.add_argument("file", type=Path)
+
+    model = commands.add_parser("model", help="登记离线模型版本或记录晋级")
+    model_commands = model.add_subparsers(dest="rsi_model_command", required=True)
+    model_register = model_commands.add_parser("register")
+    model_register.add_argument("file", type=Path)
+    model_commands.add_parser("list")
+    promote = model_commands.add_parser("promote")
+    promote.add_argument("--champion", required=True)
+    promote.add_argument("--challenger", required=True)
+    promote.add_argument("--suite", required=True)
+
+    evaluate = commands.add_parser("evaluate", help="导入或对比固定回归集结果")
+    evaluate_commands = evaluate.add_subparsers(dest="evaluate_command", required=True)
+    evaluate_import = evaluate_commands.add_parser("import")
+    evaluate_import.add_argument("file", type=Path)
+    compare = evaluate_commands.add_parser("compare")
+    compare.add_argument("--champion", required=True)
+    compare.add_argument("--challenger", required=True)
+    compare.add_argument("--suite", required=True)
+
 def add_commands(sub):
     evidence = sub.add_parser("evidence", help="离线原图回看；不能授权实时输入")
     commands = evidence.add_subparsers(dest="evidence_command", required=True)
@@ -59,6 +98,7 @@ def add_commands(sub):
     validate = commands.add_parser("validate-grid")
     validate.add_argument("file", type=Path)
     validate.add_argument("--report", action="store_true", help="保存 JSON 到 runs/reports")
+    _add_rsi_commands(sub)
 
 
 def dispatch_offline(args, root):
@@ -94,4 +134,47 @@ def dispatch_offline(args, root):
             atomic_write(path, json_bytes(result))
             result["report"] = str(path)
         return result
+    if args.command == "rsi":
+        from .gamescaling_rsi import (
+            EvaluationRecord,
+            ModelVersionRecord,
+            RsiStore,
+            TakeoverRecord,
+            load_record,
+        )
+
+        store = RsiStore(root)
+        if args.rsi_command == "trajectory":
+            if args.trajectory_command == "import":
+                episodes = store.import_trajectory(safe_path(root, args.source))
+                return {"mode": "offline_trajectory_import", "count": len(episodes),
+                        "episodes": [episode.model_dump() for episode in episodes]}
+            if not 1 <= args.limit <= 10_000:
+                raise ValueError("trajectory list limit invalid")
+            episodes = store.episodes()
+            return {"mode": "offline_trajectory_list", "total": len(episodes),
+                    "episodes": [episode.model_dump() for episode in episodes[-args.limit:]]}
+        if args.rsi_command == "hard-examples":
+            return store.hard_examples(args.limit, args.min_score)
+        if args.rsi_command == "takeover":
+            takeover = load_record(safe_path(root, args.file), TakeoverRecord)
+            store.record_takeover(takeover)
+            return {"mode": "offline_takeover_recorded", "takeover": takeover.model_dump()}
+        if args.rsi_command == "model":
+            if args.rsi_model_command == "register":
+                model = load_record(safe_path(root, args.file), ModelVersionRecord)
+                store.register_model(model)
+                return {"mode": "offline_model_registered", "model": model.model_dump()}
+            if args.rsi_model_command == "list":
+                return {"mode": "offline_model_list", "models": [
+                    model.model_dump() for model in store.models()
+                ]}
+            return store.promote(args.champion, args.challenger, args.suite)
+        if args.rsi_command == "evaluate":
+            if args.evaluate_command == "import":
+                evaluation = load_record(safe_path(root, args.file), EvaluationRecord)
+                store.record_evaluation(evaluation)
+                return {"mode": "offline_evaluation_recorded",
+                        "evaluation": evaluation.model_dump()}
+            return store.compare_models(args.champion, args.challenger, args.suite)
     raise ValueError("unknown offline command")
